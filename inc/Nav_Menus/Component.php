@@ -27,6 +27,7 @@ use function wp_nav_menu;
 class Component implements Component_Interface, Templating_Component_Interface {
 
 	const PRIMARY_NAV_MENU_SLUG = 'primary';
+	const UTILITY_NAV_MENU_SLUG = 'utility';
 
 	/**
 	 * Gets the unique identifier for the theme component.
@@ -56,6 +57,8 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		return [
 			'is_primary_nav_menu_active' => [ $this, 'is_primary_nav_menu_active' ],
 			'display_primary_nav_menu'   => [ $this, 'display_primary_nav_menu' ],
+			'is_utility_nav_menu_active' => [ $this, 'is_utility_nav_menu_active' ],
+			'display_utility_nav_menu'   => [ $this, 'display_utility_nav_menu' ],
 		];
 	}
 
@@ -66,6 +69,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		register_nav_menus(
 			[
 				static::PRIMARY_NAV_MENU_SLUG => esc_html__( 'Primary', 'wp-rig' ),
+				static::UTILITY_NAV_MENU_SLUG => esc_html__( 'Utility', 'wp-rig' ),
 			]
 		);
 	}
@@ -126,6 +130,31 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		}
 
 		$args['theme_location'] = static::PRIMARY_NAV_MENU_SLUG;
+
+		wp_nav_menu( $args );
+	}
+
+	/**
+	 * Checks whether the utility navigation menu is active.
+	 *
+	 * @return bool True if the utility navigation menu is active, false otherwise.
+	 */
+	public function is_utility_nav_menu_active() : bool {
+		return (bool) has_nav_menu( static::UTILITY_NAV_MENU_SLUG );
+	}
+
+	/**
+	 * Displays the utility navigation menu.
+	 *
+	 * @param array $args Optional. Array of arguments. See `wp_nav_menu()` documentation for a list of supported
+	 *                    arguments.
+	 */
+	public function display_utility_nav_menu( array $args = [] ) {
+		if ( ! isset( $args['container'] ) ) {
+			$args['container'] = 'ul';
+		}
+
+		$args['theme_location'] = static::UTILITY_NAV_MENU_SLUG;
 
 		wp_nav_menu( $args );
 	}

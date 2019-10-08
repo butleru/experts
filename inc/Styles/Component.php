@@ -281,6 +281,10 @@ class Component implements Component_Interface, Templating_Component_Interface {
 				'file'   => 'global.min.css',
 				'global' => true,
 			],
+			'wp-rig-fontawesome' => [
+				'file'   => 'font-awesome.min.css',
+				'global' => true,
+			],
 			'wp-rig-comments'   => [
 				'file'             => 'comments.min.css',
 				'preload_callback' => function() {
@@ -301,6 +305,18 @@ class Component implements Component_Interface, Templating_Component_Interface {
 				'file'             => 'widgets.min.css',
 				'preload_callback' => function() {
 					return wp_rig()->is_primary_sidebar_active();
+				},
+			],
+			'wp-rig-footer-sidebar'    => [
+				'file'             => 'footer-sidebar.min.css',
+				'preload_callback' => function() {
+					return wp_rig()->is_footer_sidebar_active();
+				},
+			],
+			'wp-rig-footer-widgets'    => [
+				'file'             => 'footer-widgets.min.css',
+				'preload_callback' => function() {
+					return wp_rig()->is_footer_sidebar_active();
 				},
 			],
 			'wp-rig-front-page' => [
@@ -357,8 +373,8 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		}
 
 		$google_fonts = [
-			'Roboto Condensed' => [ '400', '400i', '700', '700i' ],
-			'Crimson Text'     => [ '400', '400i', '600', '600i' ],
+			'Raleway' => [ '400', '400i', '700', '700i' ],
+			'Roboto Slab' => [ '400', '400i', '600', '600i' ],
 		];
 
 		/**
