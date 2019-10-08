@@ -1,1 +1,8 @@
-{}
+{
+  "theme": {
+    "slug": "butler-theme",
+    "name": "Butler Theme",
+    "author": "Butler University Information Technology Department",
+    "PHPNamespace": "Butler\\Butler"
+  }
+}
