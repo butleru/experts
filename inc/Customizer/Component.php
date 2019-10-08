@@ -35,6 +35,7 @@ class Component implements Component_Interface {
 	public function initialize() {
 		add_action( 'customize_register', [ $this, 'action_customize_register' ] );
 		add_action( 'customize_preview_init', [ $this, 'action_enqueue_customize_preview_js' ] );
+		add_action( 'customize_controls_enqueue_scripts', [ $this, 'action_enqueue_butler_customizer' ] );
 	}
 
 	/**
@@ -69,6 +70,42 @@ class Component implements Component_Interface {
 		}
 
 		/**
+		 * Top header.
+		 */
+		$wp_customize->add_panel(
+			'top_header',
+			[
+				'title'     => __( 'Top Header', 'wp-rig' ),
+				'priority'  => 50,
+			]
+		);
+
+		$wp_customize->add_section(
+			'top_header_cta',
+			[
+				'title'     => __( 'Top Header CTA', 'wp-rig' ),
+				'panel'     => 'top_header',
+			]
+		);
+
+		$wp_customize->add_section(
+			'top_header_icon_links',
+			[
+				'title'   => __( 'Top Header Icon Links', 'wp-rig' ),
+				'panel'   => 'top_header',
+			]
+		);
+		/**
+		 * Google Fonts Control
+		 */
+		$wp_customize->add_section(
+			'google_fonts_custom_controls_section',
+			[
+				'title'    => __( 'Google Fonts', 'wp-rig' ),
+				'priority' => 45,
+			]
+		);
+		/**
 		 * Theme options.
 		 */
 		$wp_customize->add_section(
@@ -90,6 +127,46 @@ class Component implements Component_Interface {
 			[ 'customize-preview' ],
 			wp_rig()->get_asset_version( get_theme_file_path( '/assets/js/customizer.min.js' ) ),
 			true
+		);
+	}
+	/**
+	 * Enqeues JS and CSS
+	 */
+	public function action_enqueue_butler_customizer() {
+		wp_enqueue_script(
+			'butler-customizer',
+			get_theme_file_uri( '/assets/js/custom-customizer.min.js' ),
+			[ 'jquery' ],
+			wp_rig()->get_asset_version( get_theme_file_path( '/assets/js/custom-customizer.min.js' ) ),
+			true
+		);
+		wp_enqueue_script(
+			'butler-select2-js',
+			'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js',
+			[ 'jquery' ],
+			'4.0.6',
+			true
+		);
+		wp_enqueue_style(
+			'butler-customizer-css',
+			get_theme_file_uri( '/assets/css/custom-customizer.min.css' ),
+			[],
+			wp_rig()->get_asset_version( get_theme_file_path( '/assets/css/custom-customizer.min.css' ) ),
+			'all'
+		);
+		wp_enqueue_style(
+			'butler-font-awesome-css',
+			get_theme_file_uri( '/assets/css/font-awesome.min.css' ),
+			[],
+			wp_rig()->get_asset_version( get_theme_file_path( '/assets/css/font-awesome.min.css' ) ),
+			'all'
+		);
+		wp_enqueue_style(
+			'butler-select2-css',
+			'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css',
+			[],
+			'4.0.6',
+			'all'
 		);
 	}
 }

@@ -64,47 +64,46 @@ class Component implements Component_Interface {
 				[
 					'name'  => __( 'Primary', 'wp-rig' ),
 					'slug'  => 'theme-primary',
-					'color' => '#e36d60',
+					'color' => '#13294b',
 				],
 				[
 					'name'  => __( 'Secondary', 'wp-rig' ),
-					'slug'  => 'theme-secondary',
-					'color' => '#41848f',
+					'color' => '#d1e0d7',
 				],
 				[
 					'name'  => __( 'Red', 'wp-rig' ),
 					'slug'  => 'theme-red',
-					'color' => '#C0392B',
+					'color' => '#c0392b',
 				],
 				[
 					'name'  => __( 'Green', 'wp-rig' ),
 					'slug'  => 'theme-green',
-					'color' => '#27AE60',
+					'color' => '#26d07c',
 				],
 				[
 					'name'  => __( 'Blue', 'wp-rig' ),
 					'slug'  => 'theme-blue',
-					'color' => '#2980B9',
+					'color' => '#00a3e0',
 				],
 				[
 					'name'  => __( 'Yellow', 'wp-rig' ),
 					'slug'  => 'theme-yellow',
-					'color' => '#F1C40F',
+					'color' => '#ece81a',
 				],
 				[
 					'name'  => __( 'Black', 'wp-rig' ),
 					'slug'  => 'theme-black',
-					'color' => '#1C2833',
+					'color' => '#1c2833',
 				],
 				[
 					'name'  => __( 'Grey', 'wp-rig' ),
 					'slug'  => 'theme-grey',
-					'color' => '#95A5A6',
+					'color' => '#95a5a6',
 				],
 				[
 					'name'  => __( 'White', 'wp-rig' ),
 					'slug'  => 'theme-white',
-					'color' => '#ECF0F1',
+					'color' => '#ecf0f1',
 				],
 				[
 					'name'  => __( 'Dusty daylight', 'wp-rig' ),
@@ -130,27 +129,45 @@ class Component implements Component_Interface {
 			[
 				[
 					'name'      => __( 'Small', 'wp-rig' ),
+					'shortName' => __( 'XXS', 'wp-rig' ),
+					'size'      => 8,
+					'slug'      => 'smallest',
+				],
+				[
+					'name'      => __( 'Smaller', 'wp-rig' ),
+					'shortName' => __( 'XS', 'wp-rig' ),
+					'size'      => 11,
+					'slug'      => 'smaller',
+				],
+				[
+					'name'      => __( 'Small', 'wp-rig' ),
 					'shortName' => __( 'S', 'wp-rig' ),
-					'size'      => 16,
+					'size'      => 14,
 					'slug'      => 'small',
 				],
 				[
-					'name'      => __( 'Medium', 'wp-rig' ),
-					'shortName' => __( 'M', 'wp-rig' ),
-					'size'      => 25,
-					'slug'      => 'medium',
+					'name'      => __( 'Regular', 'wp-rig' ),
+					'shortName' => __( 'S', 'wp-rig' ),
+					'size'      => 20,
+					'slug'      => 'regular',
 				],
 				[
 					'name'      => __( 'Large', 'wp-rig' ),
-					'shortName' => __( 'L', 'wp-rig' ),
-					'size'      => 31,
+					'shortName' => __( 'M', 'wp-rig' ),
+					'size'      => 24,
 					'slug'      => 'large',
 				],
 				[
 					'name'      => __( 'Larger', 'wp-rig' ),
-					'shortName' => __( 'XL', 'wp-rig' ),
-					'size'      => 39,
+					'shortName' => __( 'L', 'wp-rig' ),
+					'size'      => 29,
 					'slug'      => 'larger',
+				],
+				[
+					'name'      => __( 'Largest', 'wp-rig' ),
+					'shortName' => __( 'XL', 'wp-rig' ),
+					'size'      => 38,
+					'slug'      => 'largest',
 				],
 			]
 		);

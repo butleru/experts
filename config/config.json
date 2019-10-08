@@ -4,5 +4,13 @@
     "name": "Butler Theme",
     "author": "Butler University Information Technology Department",
     "PHPNamespace": "Butler\\Butler"
+  },
+  "dev": {
+    "browserSync": {
+      "live": true,
+      "proxyURL": "localhost/butler-theme/",
+      "bypassPort": "8181",
+      "https": false
+    }
   }
 }

@@ -84,11 +84,11 @@
 
 .wp-block-column:not(:last-child),
 .wp-block-column:nth-child(2n+1) {
-	margin-right: 0;
+	margin-right: 1rem;
 }
 
 .wp-block-column:not(:first-child) {
-	margin-left: 0;
+	margin-left: 1rem;
 }
 
 .wp-block-latest-posts,
