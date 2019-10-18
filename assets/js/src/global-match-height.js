@@ -1,6 +1,6 @@
-jQuery(document).ready(function() {
-	jQuery('.nosocial img').matchHeight({
-        byRow: false,
-		target: jQuery('.top-cta-image-container img')
-    });
-});
+jQuery( document ).ready( function() {
+	jQuery( '.butler.social-icon' ).matchHeight( {
+		byRow: false,
+		target: jQuery( '.top-cta-image-container img' ),
+	} );
+} );

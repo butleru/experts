@@ -168,5 +168,12 @@ class Component implements Component_Interface {
 			'4.0.6',
 			'all'
 		);
+		wp_enqueue_style(
+			'butler-icons',
+			'https://butler-cdn.s3.amazonaws.com/custom-icons/css/butler-icons.css',
+			[],
+			wp_rig()->get_asset_version( 'https://butler-cdn.s3.amazonaws.com/custom-icons/css/butler-icons.css' ),
+			'all'
+		);
 	}
 }

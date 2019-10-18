@@ -36,6 +36,9 @@ class Butler_Single_Accordion_Custom_Control extends WP_Customize_Control {
 			'i' => array(
 				'class' => array(),
 			),
+			'span' => array(
+				'class' => array(),
+			),
 		);
 		?>
 		<div class="single-accordion-custom-control">

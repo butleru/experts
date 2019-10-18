@@ -131,7 +131,7 @@ input[type="number"]:focus {
 }
 
 .text_radio_button_control .radio-button-label span:hover {
-	background-color: rgba(255, 255, 255, .2);
+	background-color: rgba(255, 255, 255, 0.2);
 	color: #2885bb;
 }
 
@@ -167,10 +167,12 @@ input[type="number"]:focus {
 	display: none;
 }
 
+/* stylelint-disable */
 .image_checkbox_control .checkbox-label > img {
 	cursor: pointer;
 	border: 3px solid #ddd;
 }
+/* stylelint-enable */
 
 .image_checkbox_control .checkbox-label > input:checked + img {
 	border: 3px solid #2885bb;
@@ -183,24 +185,21 @@ input[type="number"]:focus {
 	margin-bottom: 30px;
 }
 
-.slider-custom-control input[type=number]::-webkit-inner-spin-button,
-.slider-custom-control input[type=number]::-webkit-outer-spin-button {
+.slider-custom-control input[type="number"] {
+	-moz-appearance: textfield;
+	text-align: right;
+	width: 50px;
+	float: right;
+}
+
+.slider-custom-control input[type="number"]::-webkit-inner-spin-button,
+.slider-custom-control input[type="number"]::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
 
-.slider-custom-control input[type=number] {
-	-moz-appearance: textfield;
-}
-
 .slider-custom-control  .customize-control-title {
 	display: inline-block;
-}
-
-.slider-custom-control input[type=number] {
-	text-align: right;
-	width: 50px;
-	float: right;
 }
 
 .slider-custom-control .slider {
@@ -281,7 +280,7 @@ input[type="number"]:focus {
 	background: #2885bb none repeat scroll 0 0;
 	border: 1px solid #2885bb;
 	color: #454545;
-	font-weight: normal;
+	font-weight: 500;
 }
 
 .slider-custom-control .ui-slider-horizontal .ui-slider-handle {
@@ -345,8 +344,8 @@ input[type="number"]:focus {
 	transition: margin 0.3s ease-in 0s;
 }
 
-.toggle-switch-inner:before,
-.toggle-switch-inner:after {
+.toggle-switch-inner::before,
+.toggle-switch-inner::after {
 	display: block;
 	float: left;
 	width: 50%;
@@ -354,24 +353,24 @@ input[type="number"]:focus {
 	padding: 0;
 	line-height: 22px;
 	font-size: 14px;
-	color: white;
+	color: #fff;
 	font-family: Trebuchet, Arial, sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	box-sizing: border-box;
 }
 
-.toggle-switch-inner:before {
+.toggle-switch-inner::before {
 	content: "ON";
 	padding-left: 8px;
 	background-color: #2885bb;
-	color: #FFFFFF;
+	color: #fff;
 }
 
-.toggle-switch-inner:after {
+.toggle-switch-inner::after {
 	content: "OFF";
 	padding-right: 8px;
-	background-color: #EEEEEE;
-	color: #999999;
+	background-color: #eee;
+	color: #999;
 	text-align: right;
 }
 
@@ -379,7 +378,7 @@ input[type="number"]:focus {
 	display: block;
 	width: 16px;
 	margin: 3px;
-	background: #FFFFFF;
+	background: #fff;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -394,7 +393,7 @@ input[type="number"]:focus {
 }
 
 .toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
-	right: 0px;
+	right: 0;
 }
 
 /* ==========================================================================
@@ -502,9 +501,6 @@ input[type="number"]:focus {
 /* ==========================================================================
    Alpha Color Picker
    ========================================================================== */
-.customize-control-alpha-color .wp-picker-container .iris-picker {
-	border-bottom:none;
-}
 
 .customize-control-alpha-color .wp-picker-container {
 	max-width: 257px;
@@ -524,15 +520,11 @@ input[type="number"]:focus {
 	float: right;
 }
 
-.wp-picker-container .wp-picker-open ~ .wp-picker-holder .alpha-color-picker-container {
-	display: block;
-}
-
 .alpha-color-picker-container {
 	border: 1px solid #dfdfdf;
 	border-top: none;
 	display: none;
-	background: #FFF;
+	background: #fff;
 	padding: 0 11px 10px;
 	position: relative;
 }
@@ -556,18 +548,19 @@ input[type="number"]:focus {
 	text-align: center;
 	margin: 0 auto;
 	width: 88%;
-	width: calc( 100% - 28px );
+	width: calc(100% - 28px);
 }
 
+/* stylelint-disable */
 .alpha-color-picker-container .ui-slider-handle,
 .alpha-color-picker-container .ui-widget-content .ui-state-default {
 	color: #777;
-	background-color: #FFF;
-	text-shadow: 0 1px 0 #FFF;
+	background-color: #fff;
+	text-shadow: 0 1px 0 #fff;
 	text-decoration: none;
 	position: absolute;
 	z-index: 2;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 	border: 1px solid #aaa;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -582,6 +575,7 @@ input[type="number"]:focus {
 	line-height: 27px;
 	margin-left: -14px;
 }
+/* stylelint-enable */
 
 .alpha-color-picker-container .ui-slider-handle.show-opacity {
 	font-size: 12px;
@@ -603,9 +597,9 @@ input[type="number"]:focus {
 .alpha-color-picker-container .transparency {
 	height: 24px;
 	width: 100%;
-	background-color: #FFF;
+	background-color: #fff;
 	background-image: url(../images/color-picker-transparency-grid.png);
-	box-shadow: 0 0 5px rgba(0,0,0,0.4) inset;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -614,12 +608,14 @@ input[type="number"]:focus {
 }
 
 @media only screen and (max-width: 782px) {
+
 	.customize-control-alpha-color .wp-picker-input-wrap input[type="text"].wp-color-picker.alpha-color-control {
 		width: 184px;
 	}
 }
 
 @media only screen and (max-width: 640px) {
+
 	.customize-control-alpha-color .wp-picker-input-wrap input[type="text"].wp-color-picker.alpha-color-control {
 		width: 172px;
 		height: 33px;
@@ -635,8 +631,8 @@ input[type="number"]:focus {
 	box-shadow: none;
 }
 
-.customize-control-color .wp-color-result:after,
-.customize-control-alpha-color .wp-color-result:after {
+.customize-control-color .wp-color-result::after,
+.customize-control-alpha-color .wp-color-result::after {
 	border: none;
 }
 
@@ -656,8 +652,16 @@ input[type="number"]:focus {
 	border: none;
 }
 
+.customize-control-alpha-color .wp-picker-container .iris-picker {
+	border-bottom: none;
+}
+
 .wp-picker-container .alpha-color-picker-container {
 	width: 233px;
+}
+
+.wp-picker-container .wp-picker-open ~ .wp-picker-holder .alpha-color-picker-container {
+	display: block;
 }
 
 /* ==========================================================================

@@ -16,7 +16,7 @@ $butler_links_social = $bls->butler_get_social_media();
 	<div class="top-header-bar-inner">
 		<div class="top-cta-links-container top-cta-container">
 			<?php
-			echo $butler_links_social;
+			echo $butler_links_social; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */
 			?>
 		</div>
 		<div class="top-cta-image-container top-cta-container" style="background: <?php echo get_theme_mod( 'top_bar_cta_background_color' ); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>">
