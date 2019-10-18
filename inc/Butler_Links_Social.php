@@ -172,11 +172,11 @@ class Butler_Links_Social {
 			if ( ! empty( $value ) ) {
 				$domain = str_ireplace( 'www.', '', parse_url( $value, PHP_URL_HOST ) );
 				$index = array_search( strtolower( $domain ), array_column( $social_icons, 'url' ) );
-				$spans = (int)$social_icons[$index]['spans'];
+				$spans = (int) $social_icons[ $index ]['spans'];
 				$span_container = '';
-				if( $spans > 0 ) {
-					for( $i = 1; $i < $spans + 1; $i++) {
-						$span_container .= '<span class="path' . $i .'"></span>';
+				if ( $spans > 0 ) {
+					for ( $i = 1; $i < $spans + 1; $i++ ) {
+						$span_container .= '<span class="path' . $i . '"></span>';
 					}
 				}
 				if ( false !== $index ) {
@@ -188,7 +188,7 @@ class Butler_Links_Social {
 						$social_icons[ $index ]['title'],
 						( ! $social_newtab ? '' : ' target="_blank"' ),
 						$social_icons[ $index ]['icon'],
-						$span_container,
+						$span_container
 					);
 				} else {
 					$output[] = sprintf(

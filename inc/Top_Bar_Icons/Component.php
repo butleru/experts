@@ -42,10 +42,6 @@ class Component implements Component_Interface {
 	 * Enqueues script(s) that the top bar icons need.
 	 */
 	public function action_enqueue_top_bar_assets() {
-		/*wp_enqueue_style(
-			'butler-icons',
-			'https://butler-cdn.s3.amazonaws.com/custom-icons/css/butler-icons.css'
-		);*/
 		wp_enqueue_script(
 			'match-height',
 			get_theme_file_uri( '/assets/js/jquery.matchHeight.min.js' ),
@@ -53,13 +49,6 @@ class Component implements Component_Interface {
 			wp_rig()->get_asset_version( get_theme_file_path( '/assets/js/jquery.matchHeight.min.js' ) ),
 			false
 		);
-		/*wp_enqueue_script(
-			'match-height-global',
-			get_theme_file_uri( '/assets/js/global-match-height.js' ),
-			array( 'jquery', 'match-height' ),
-			wp_rig()->get_asset_version( get_theme_file_path( '/assets/js/global-match-height.js' ) ),
-			false
-		);*/
 	}
 	/**
 	 * Adds a setting and control for top header bar in the customizer
