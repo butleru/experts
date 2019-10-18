@@ -10,7 +10,7 @@ namespace WP_Rig\WP_Rig;
 use WP_Customize_Control;
 
 /**
- * Custom links and social, icons
+ * Custom links and social icons class
  */
 class Butler_Links_Social {
 	/**
@@ -95,38 +95,39 @@ class Butler_Links_Social {
 	 */
 	public function butler_generate_social_urls() {
 		$social_icons = array(
-			array( 'url' => 'behance.net', 'icon' => 'fa-lg fab fa-behance', 'title' => esc_html__( 'Follow me on Behance', 'wp-rig' ), 'class' => 'behance' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'bitbucket.org', 'icon' => 'fa-lg fab fa-bitbucket', 'title' => esc_html__( 'Fork me on Bitbucket', 'wp-rig' ), 'class' => 'bitbucket' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'codepen.io', 'icon' => 'fa-lg fab fa-codepen', 'title' => esc_html__( 'Follow me on CodePen', 'wp-rig' ), 'class' => 'codepen' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'deviantart.com', 'icon' => 'fa-lg fab fa-deviantart', 'title' => esc_html__( 'Watch me on DeviantArt', 'wp-rig' ), 'class' => 'deviantart' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'discord.gg', 'icon' => 'fa-lg fab fa-discord', 'title' => esc_html__( 'Join me on Discord', 'wp-rig' ), 'class' => 'discord' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'dribbble.com', 'icon' => 'fa-lg fab fa-dribbble', 'title' => esc_html__( 'Follow me on Dribbble', 'wp-rig' ), 'class' => 'dribbble' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'etsy.com', 'icon' => 'fa-lg fab fa-etsy', 'title' => esc_html__( 'favorite me on Etsy', 'wp-rig' ), 'class' => 'etsy' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'facebook.com', 'icon' => 'fa-lg fab fa-facebook-f', 'title' => esc_html__( 'Like us on Facebook', 'wp-rig' ), 'class' => 'facebook' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'flickr.com', 'icon' => 'fa-lg fab fa-flickr', 'title' => esc_html__( 'Connect with me on Flickr', 'wp-rig' ), 'class' => 'flickr' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'foursquare.com', 'icon' => 'fa-lg fab fa-foursquare', 'title' => esc_html__( 'Follow me on Foursquare', 'wp-rig' ), 'class' => 'foursquare' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'github.com', 'icon' => 'fa-lg fab fa-github', 'title' => esc_html__( 'Fork me on GitHub', 'wp-rig' ), 'class' => 'github' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'instagram.com', 'icon' => 'fa-lg fab fa-instagram', 'title' => esc_html__( 'Follow me on Instagram', 'wp-rig' ), 'class' => 'instagram' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'kickstarter.com', 'icon' => 'fa-lg fab fa-kickstarter-k', 'title' => esc_html__( 'Back me on Kickstarter', 'wp-rig' ), 'class' => 'kickstarter' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'last.fm', 'icon' => 'fa-lg fab fa-lastfm', 'title' => esc_html__( 'Follow me on Last.fm', 'wp-rig' ), 'class' => 'lastfm' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'linkedin.com', 'icon' => 'fa-lg fab fa-linkedin-in', 'title' => esc_html__( 'Connect with me on LinkedIn', 'wp-rig' ), 'class' => 'linkedin' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'medium.com', 'icon' => 'fa-lg fab fa-medium-m', 'title' => esc_html__( 'Follow me on Medium', 'wp-rig' ), 'class' => 'medium' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'patreon.com', 'icon' => 'fa-lg fab fa-patreon', 'title' => esc_html__( 'Support me on Patreon', 'wp-rig' ), 'class' => 'patreon' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'pinterest.com', 'icon' => 'fa-lg fab fa-pinterest-p', 'title' => esc_html__( 'Follow me on Pinterest', 'wp-rig' ), 'class' => 'pinterest' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'plus.google.com', 'icon' => 'fa-lg fab fa-google-plus-g', 'title' => esc_html__( 'Connect with me on Google+', 'wp-rig' ), 'class' => 'googleplus' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'reddit.com', 'icon' => 'fa-lg fab fa-reddit-alien', 'title' => esc_html__( 'Join me on Reddit', 'wp-rig' ), 'class' => 'reddit' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'slack.com', 'icon' => 'fa-lg fab fa-slack-hash', 'title' => esc_html__( 'Join me on Slack', 'wp-rig' ), 'class' => 'slack.' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'slideshare.net', 'icon' => 'fa-lg fab fa-slideshare', 'title' => esc_html__( 'Follow me on SlideShare', 'wp-rig' ), 'class' => 'slideshare' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'snapchat.com', 'icon' => 'fa-lg fab fa-snapchat-ghost', 'title' => esc_html__( 'Add me on Snapchat', 'wp-rig' ), 'class' => 'snapchat' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'soundcloud.com', 'icon' => 'fa-lg fab fa-soundcloud', 'title' => esc_html__( 'Follow me on SoundCloud', 'wp-rig' ), 'class' => 'soundcloud' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'spotify.com', 'icon' => 'fa-lg fab fa-spotify', 'title' => esc_html__( 'Follow me on Spotify', 'wp-rig' ), 'class' => 'spotify' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'stackoverflow.com', 'icon' => 'fa-lg fab fa-stack-overflow', 'title' => esc_html__( 'Join me on Stack Overflow', 'wp-rig' ), 'class' => 'stackoverflow' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'tumblr.com', 'icon' => 'fa-lg fab fa-tumblr', 'title' => esc_html__( 'Follow me on Tumblr', 'wp-rig' ), 'class' => 'tumblr' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'twitch.tv', 'icon' => 'fa-lg fab fa-twitch', 'title' => esc_html__( 'Follow me on Twitch', 'wp-rig' ), 'class' => 'twitch' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'twitter.com', 'icon' => 'fa-lg fab fa-twitter', 'title' => esc_html__( 'Follow me on Twitter', 'wp-rig' ), 'class' => 'twitter' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'vimeo.com', 'icon' => 'fa-lg fab fa-vimeo-v', 'title' => esc_html__( 'Follow me on Vimeo', 'wp-rig' ), 'class' => 'vimeo' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'weibo.com', 'icon' => 'fa-lg fab fa-weibo', 'title' => esc_html__( 'Follow me on weibo', 'wp-rig' ), 'class' => 'weibo' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
-			array( 'url' => 'youtube.com', 'icon' => 'fa-lg fab fa-youtube', 'title' => esc_html__( 'Subscribe to me on YouTube', 'wp-rig' ), 'class' => 'youtube' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'behance.net', 'icon' => 'butler-icon-3x butler-icon bi-behance', 'title' => esc_html__( 'Follow me on Behance', 'wp-rig' ), 'class' => 'behance' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'bitbucket.org', 'icon' => 'butler-icon-3x butler-icon bi-bitbucket', 'title' => esc_html__( 'Fork me on Bitbucket', 'wp-rig' ), 'class' => 'bitbucket' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'codepen.io', 'icon' => 'butler-icon-3x butler-icon bi-codepen', 'title' => esc_html__( 'Follow me on CodePen', 'wp-rig' ), 'class' => 'codepen' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'deviantart.com', 'icon' => 'butler-icon-3x butler-icon bi-deviantart', 'title' => esc_html__( 'Watch me on DeviantArt', 'wp-rig' ), 'class' => 'deviantart' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'discord.gg', 'icon' => 'butler-icon-3x butler-icon bi-discord', 'title' => esc_html__( 'Join me on Discord', 'wp-rig' ), 'class' => 'discord' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'dribbble.com', 'icon' => 'butler-icon-3x butler-icon bi-dribbble', 'title' => esc_html__( 'Follow me on Dribbble', 'wp-rig' ), 'class' => 'dribbble' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'etsy.com', 'icon' => 'butler-icon-3x butler-icon bi-etsy', 'title' => esc_html__( 'favorite me on Etsy', 'wp-rig' ), 'class' => 'etsy' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'facebook.com', 'icon' => 'butler-icon-3x butler-icon bi-facebook-f', 'title' => esc_html__( 'Like us on Facebook', 'wp-rig' ), 'class' => 'facebook' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'flickr.com', 'icon' => 'butler-icon-3x butler-icon bi-flickr', 'title' => esc_html__( 'Connect with me on Flickr', 'wp-rig' ), 'class' => 'flickr' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'foursquare.com', 'icon' => 'butler-icon-3x butler-icon bi-foursquare', 'title' => esc_html__( 'Follow me on Foursquare', 'wp-rig' ), 'class' => 'foursquare' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'github.com', 'icon' => 'butler-icon-3x butler-icon bi-github', 'title' => esc_html__( 'Fork me on GitHub', 'wp-rig' ), 'class' => 'github' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'instagram.com', 'icon' => 'butler-icon-3x butler-icon bi-instagram', 'title' => esc_html__( 'Follow me on Instagram', 'wp-rig' ), 'class' => 'instagram' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'kickstarter.com', 'icon' => 'butler-icon-3x butler-icon bi-kickstarter-k', 'title' => esc_html__( 'Back me on Kickstarter', 'wp-rig' ), 'class' => 'kickstarter' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'last.fm', 'icon' => 'butler-icon-3x butler-icon bi-lastfm', 'title' => esc_html__( 'Follow me on Last.fm', 'wp-rig' ), 'class' => 'lastfm' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'linkedin.com', 'icon' => 'butler-icon-3x butler-icon bi-linkedin-in', 'title' => esc_html__( 'Connect with me on LinkedIn', 'wp-rig' ), 'class' => 'linkedin' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'medium.com', 'icon' => 'butler-icon-3x butler-icon bi-medium-m', 'title' => esc_html__( 'Follow me on Medium', 'wp-rig' ), 'class' => 'medium' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'patreon.com', 'icon' => 'butler-icon-3x butler-icon bi-patreon', 'title' => esc_html__( 'Support me on Patreon', 'wp-rig' ), 'class' => 'patreon' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'pinterest.com', 'icon' => 'butler-icon-3x butler-icon bi-pinterest-p', 'title' => esc_html__( 'Follow me on Pinterest', 'wp-rig' ), 'class' => 'pinterest' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'plus.google.com', 'icon' => 'butler-icon-3x butler-icon bi-google-plus-g', 'title' => esc_html__( 'Connect with me on Google+', 'wp-rig' ), 'class' => 'googleplus' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'reddit.com', 'icon' => 'butler-icon-3x butler-icon bi-reddit-alien', 'title' => esc_html__( 'Join me on Reddit', 'wp-rig' ), 'class' => 'reddit' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'slack.com', 'icon' => 'butler-icon-3x butler-icon bi-slack-hash', 'title' => esc_html__( 'Join me on Slack', 'wp-rig' ), 'class' => 'slack.' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'slideshare.net', 'icon' => 'butler-icon-3x butler-icon bi-slideshare', 'title' => esc_html__( 'Follow me on SlideShare', 'wp-rig' ), 'class' => 'slideshare' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'snapchat.com', 'icon' => 'butler-icon-3x butler-icon bi-snapchat-ghost', 'title' => esc_html__( 'Add me on Snapchat', 'wp-rig' ), 'class' => 'snapchat' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'soundcloud.com', 'icon' => 'butler-icon-3x butler-icon bi-soundcloud', 'title' => esc_html__( 'Follow me on SoundCloud', 'wp-rig' ), 'class' => 'soundcloud' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'spotify.com', 'icon' => 'butler-icon-3x butler-icon bi-spotify', 'title' => esc_html__( 'Follow me on Spotify', 'wp-rig' ), 'class' => 'spotify' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'stackoverflow.com', 'icon' => 'butler-icon-3x butler-icon bi-stack-overflow', 'title' => esc_html__( 'Join me on Stack Overflow', 'wp-rig' ), 'class' => 'stackoverflow' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'tumblr.com', 'icon' => 'butler-icon-3x butler-icon bi-tumblr', 'title' => esc_html__( 'Follow me on Tumblr', 'wp-rig' ), 'class' => 'tumblr' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'twitch.tv', 'icon' => 'butler-icon-3x butler-icon bi-twitch', 'title' => esc_html__( 'Follow me on Twitch', 'wp-rig' ), 'class' => 'twitch' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'twitter.com', 'icon' => 'butler-icon-3x butler-icon bi-twitter', 'title' => esc_html__( 'Follow me on Twitter', 'wp-rig' ), 'class' => 'twitter' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'vimeo.com', 'icon' => 'butler-icon-3x butler-icon bi-vimeo-v', 'title' => esc_html__( 'Follow me on Vimeo', 'wp-rig' ), 'class' => 'vimeo' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'weibo.com', 'icon' => 'butler-icon-3x butler-icon bi-weibo', 'title' => esc_html__( 'Follow me on weibo', 'wp-rig' ), 'class' => 'weibo' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'youtube.com', 'icon' => 'butler-icon-3x butler-icon bi-youtube', 'title' => esc_html__( 'Subscribe to me on YouTube', 'wp-rig' ), 'class' => 'youtube' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
+			array( 'url' => 'butler.edu', 'icon' => 'butler-icon-3x butler-icon bi-bulldog', 'title' => esc_html__( 'Butler.edu', 'wp-rig' ), 'class' => 'butler', 'spans' => '24' ), /* phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound */
 		);
 
 		return apply_filters( 'butler_social_icons', $social_icons );
@@ -171,15 +172,23 @@ class Butler_Links_Social {
 			if ( ! empty( $value ) ) {
 				$domain = str_ireplace( 'www.', '', parse_url( $value, PHP_URL_HOST ) );
 				$index = array_search( strtolower( $domain ), array_column( $social_icons, 'url' ) );
+				$spans = (int)$social_icons[$index]['spans'];
+				$span_container = '';
+				if( $spans > 0 ) {
+					for( $i = 1; $i < $spans + 1; $i++) {
+						$span_container .= '<span class="path' . $i .'"></span>';
+					}
+				}
 				if ( false !== $index ) {
 					$output[] = sprintf(
-						'<li class=" %1$s %2$s"><a href="%3$s" title="%4$s"%5$s><i class="%6$s"></i></a></li>',
+						'<li class=" %1$s %2$s"><a href="%3$s" title="%4$s"%5$s><i class="%6$s">%7$s</i></a></li>',
 						$social_icons[ $index ]['class'],
 						'social-icon',
 						esc_url( $value ),
 						$social_icons[ $index ]['title'],
 						( ! $social_newtab ? '' : ' target="_blank"' ),
-						$social_icons[ $index ]['icon']
+						$social_icons[ $index ]['icon'],
+						$span_container,
 					);
 				} else {
 					$output[] = sprintf(

@@ -111,7 +111,10 @@ class Component implements Component_Interface, Templating_Component_Interface {
 
 		$css_files = $this->get_css_files();
 		foreach ( $css_files as $handle => $data ) {
+			$css_uri = ( strpos( $data['file'], 'http' ) === 0 ) ? '' : get_theme_file_uri( '/assets/css/' );
+
 			$src     = $css_uri . $data['file'];
+
 			$version = wp_rig()->get_asset_version( $css_dir . $data['file'] );
 
 			/*
@@ -281,8 +284,8 @@ class Component implements Component_Interface, Templating_Component_Interface {
 				'file'   => 'global.min.css',
 				'global' => true,
 			],
-			'wp-rig-fontawesome' => [
-				'file'   => 'font-awesome.min.css',
+			'wp-rig-butler-icons' => [
+				'file'   => 'https://butler-cdn.s3.amazonaws.com/custom-icons/css/butler-icons.css',
 				'global' => true,
 			],
 			'wp-rig-comments'   => [
@@ -358,7 +361,6 @@ class Component implements Component_Interface, Templating_Component_Interface {
 				$data
 			);
 		}
-
 		return $this->css_files;
 	}
 

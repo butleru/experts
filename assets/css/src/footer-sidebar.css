@@ -3,17 +3,19 @@
 --------------------------------------------------------------*/
 .footer-sidebar {
 	display: grid;
-	grid-template-columns: minmax(5rem,14.5rem) minmax(12.5rem,calc(var(--content-width)/2)) minmax(5rem,14.5rem);
+	grid-template-columns: minmax(5rem, 14.5rem) minmax(12.5rem, calc(var(--content-width) / 2)) minmax(5rem, 14.5rem);
 	grid-gap: 2rem;
 	justify-content: center;
 	align-items: center;
 }
-
+/* stylelint-disable *//* stylelint-enable */
 @media (--narrow-menu-query) {
+
 	.footer-sidebar {
 		display: flex;
 		flex-direction: column;
 	}
+
 	.footer-sidebar .widget:nth-child(1) {
 		order: 2;
 	}

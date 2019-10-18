@@ -10,3 +10,4 @@
 @custom-media --narrow-content-query screen and (max-width: 48rem);
 @custom-media --content-query screen and (min-width: 48.05rem);
 @custom-media --sidebar-query screen and (min-width: 60rem);
+@custom-media --tablet-icon-query screen and (max-width: 64rem);
