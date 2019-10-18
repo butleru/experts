@@ -46,7 +46,7 @@ if ( ! wp_rig()->is_utility_nav_menu_active() ) {
 		}
 		?>
 	>
-		<i class="fas fa-bars"></i>
+		<i class="butler-icon bi-bars"></i>
 	</button>
 	<div class="utility-menu-container">
 		<div class="utility-menu-container-inner">

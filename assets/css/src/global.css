@@ -607,8 +607,27 @@ select {
 .utility-navigation ul ul li {
 	padding-left: 1em;
 }
+@media (--narrow-menu-query) {
 
-@media (--wide-menu-query) {
+	.nav--toggle-small.utility-navigation {
+		background: transparent;
+		padding: 0;
+		position: absolute;
+		right: 1rem;
+		bottom: 6rem;
+	}
+
+	.utility-menu-container {
+		background: #000;
+		padding: 0 1rem;
+		position: absolute;
+		right: 0;
+		width: 250px;
+		top: 2.5rem;
+		text-align: right;
+	}
+}
+@media (--content-query) {
 
 	.utility-navigation ul li a {
 		padding: 0.4em 0.5em;
