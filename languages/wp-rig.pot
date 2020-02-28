@@ -1,4 +1,4 @@
-# Copyright (C) 2019 WP Rig
+# Copyright (C) 2020 WP Rig
 # This file is distributed under the same license as the WP Rig package.
 msgid ""
 msgstr ""
@@ -51,6 +51,142 @@ msgstr ""
 msgid "WP Rig requires at least PHP version %1$s. You are running version %2$s. Please update and try again."
 msgstr ""
 
+#: inc/Butler_Links_Social.php:98
+msgid "Follow me on Behance"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:99
+msgid "Fork me on Bitbucket"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:100
+msgid "Follow me on CodePen"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:101
+msgid "Watch me on DeviantArt"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:102
+msgid "Join me on Discord"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:103
+msgid "Follow me on Dribbble"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:104
+msgid "favorite me on Etsy"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:105
+msgid "Like us on Facebook"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:106
+msgid "Connect with me on Flickr"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:107
+msgid "Follow me on Foursquare"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:108
+msgid "Fork me on GitHub"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:109
+msgid "Follow me on Instagram"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:110
+msgid "Back me on Kickstarter"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:111
+msgid "Follow me on Last.fm"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:112
+msgid "Connect with me on LinkedIn"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:113
+msgid "Follow me on Medium"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:114
+msgid "Support me on Patreon"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:115
+msgid "Follow me on Pinterest"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:116
+msgid "Connect with me on Google+"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:117
+msgid "Join me on Reddit"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:118
+msgid "Join me on Slack"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:119
+msgid "Follow me on SlideShare"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:120
+msgid "Add me on Snapchat"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:121
+msgid "Follow me on SoundCloud"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:122
+msgid "Follow me on Spotify"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:123
+msgid "Join me on Stack Overflow"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:124
+msgid "Follow me on Tumblr"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:125
+msgid "Follow me on Twitch"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:126
+msgid "Follow me on Twitter"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:127
+msgid "Follow me on Vimeo"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:128
+msgid "Follow me on weibo"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:129
+msgid "Subscribe to me on YouTube"
+msgstr ""
+
+#: inc/Butler_Links_Social.php:130
+msgid "Butler.edu"
+msgstr ""
+
+#: inc/Butler_Sortable_Repeater_Custom_Control.php:42
+msgid "Add"
+msgstr ""
+
 #. translators: 1: classname/type of the variable, 2: interface name
 #: inc/Template_Tags.php:54
 msgid "The theme templating component %1$s does not implement the %2$s interface."
@@ -93,11 +229,27 @@ msgstr ""
 msgid "New comment(s)"
 msgstr ""
 
-#: inc/Customizer/Component.php:77
+#: inc/Customizer/Component.php:78
+msgid "Top Header"
+msgstr ""
+
+#: inc/Customizer/Component.php:86
+msgid "Top Header CTA"
+msgstr ""
+
+#: inc/Customizer/Component.php:94
+msgid "Top Header Icon Links"
+msgstr ""
+
+#: inc/Customizer/Component.php:104
+msgid "Google Fonts"
+msgstr ""
+
+#: inc/Customizer/Component.php:114
 msgid "Theme Options"
 msgstr ""
 
-#: inc/Editor/Component.php:65, inc/Nav_Menus/Component.php:68
+#: inc/Editor/Component.php:65, inc/Nav_Menus/Component.php:71
 msgid "Primary"
 msgstr ""
 
@@ -105,72 +257,96 @@ msgstr ""
 msgid "Secondary"
 msgstr ""
 
-#: inc/Editor/Component.php:75
+#: inc/Editor/Component.php:74
 msgid "Red"
 msgstr ""
 
-#: inc/Editor/Component.php:80
+#: inc/Editor/Component.php:79
 msgid "Green"
 msgstr ""
 
-#: inc/Editor/Component.php:85
+#: inc/Editor/Component.php:84
 msgid "Blue"
 msgstr ""
 
-#: inc/Editor/Component.php:90
+#: inc/Editor/Component.php:89
 msgid "Yellow"
 msgstr ""
 
-#: inc/Editor/Component.php:95
+#: inc/Editor/Component.php:94
 msgid "Black"
 msgstr ""
 
-#: inc/Editor/Component.php:100
+#: inc/Editor/Component.php:99
 msgid "Grey"
 msgstr ""
 
-#: inc/Editor/Component.php:105
+#: inc/Editor/Component.php:104
 msgid "White"
 msgstr ""
 
-#: inc/Editor/Component.php:110
+#: inc/Editor/Component.php:109
 msgid "Dusty daylight"
 msgstr ""
 
-#: inc/Editor/Component.php:115
+#: inc/Editor/Component.php:114
 msgid "Dusty sun"
 msgstr ""
 
-#: inc/Editor/Component.php:132
+#: inc/Editor/Component.php:131, inc/Editor/Component.php:143
 msgid "Small"
 msgstr ""
 
-#: inc/Editor/Component.php:133
-msgid "S"
+#: inc/Editor/Component.php:132
+msgid "XXS"
+msgstr ""
+
+#: inc/Editor/Component.php:137
+msgid "Smaller"
 msgstr ""
 
 #: inc/Editor/Component.php:138
-msgid "Medium"
+msgid "XS"
 msgstr ""
 
-#: inc/Editor/Component.php:139
-msgid "M"
+#: inc/Editor/Component.php:144, inc/Editor/Component.php:150
+msgid "S"
 msgstr ""
 
-#: inc/Editor/Component.php:144
+#: inc/Editor/Component.php:149
+msgid "Regular"
+msgstr ""
+
+#: inc/Editor/Component.php:155
 msgid "Large"
 msgstr ""
 
-#: inc/Editor/Component.php:145
-msgid "L"
+#: inc/Editor/Component.php:156
+msgid "M"
 msgstr ""
 
-#: inc/Editor/Component.php:150
+#: inc/Editor/Component.php:161
 msgid "Larger"
 msgstr ""
 
-#: inc/Editor/Component.php:151
+#: inc/Editor/Component.php:162
+msgid "L"
+msgstr ""
+
+#: inc/Editor/Component.php:167
+msgid "Largest"
+msgstr ""
+
+#: inc/Editor/Component.php:168
 msgid "XL"
+msgstr ""
+
+#: inc/Footers/Component.php:69
+msgid "Footer"
+msgstr ""
+
+#: inc/Footers/Component.php:71, inc/Sidebars/Component.php:71
+msgid "Add widgets here."
 msgstr ""
 
 #: inc/Lazyload/Component.php:89
@@ -189,24 +365,184 @@ msgstr ""
 msgid "Lazy-loading images means images are loaded only when they are in view. Improves performance, but can result in content jumping around on slower connections."
 msgstr ""
 
+#: inc/Nav_Menus/Component.php:72
+msgid "Utility"
+msgstr ""
+
 #: inc/Sidebars/Component.php:69
 msgid "Sidebar"
 msgstr ""
 
-#: inc/Sidebars/Component.php:71
-msgid "Add widgets here."
-msgstr ""
-
 #. translators: %s: stylesheet handle
-#: inc/Styles/Component.php:235
+#: inc/Styles/Component.php:238
 msgid "Invalid theme stylesheet handle: %s"
 msgstr ""
 
-#: template-parts/content/entry-attachment.php:33, template-parts/content/entry.php:32
+#: inc/Top_Bar_CTA/Component.php:59
+msgid "Top Bar CTA Image"
+msgstr ""
+
+#: inc/Top_Bar_CTA/Component.php:81
+msgid "CTA Background Color Picker"
+msgstr ""
+
+#: inc/Top_Bar_CTA/Component.php:82
+msgid "Set the background color of the CTA"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:73
+msgid "Open in new browser tab"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:104
+msgid "Social URLs"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:105
+msgid "Add social media and other links."
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:108
+msgid "Add Icon"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:127
+msgid "<i class=\"butler-icon bi-behance\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:128
+msgid "<i class=\"butler-icon bi-bitbucket\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:129
+msgid "<i class=\"butler-icon bi-codepen\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:130
+msgid "<i class=\"butler-icon bi-deviantart\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:131
+msgid "<i class=\"butler-icon bi-discord\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:132
+msgid "<i class=\"butler-icon bi-dribbble\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:133
+msgid "<i class=\"butler-icon bi-etsy\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:134
+msgid "<i class=\"butler-icon bi-facebook-square\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:135
+msgid "<i class=\"butler-icon bi-flickr\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:136
+msgid "<i class=\"butler-icon bi-foursquare\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:137
+msgid "<i class=\"butler-icon bi-github\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:138
+msgid "<i class=\"butler-icon bi-google-plus-square\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:139
+msgid "<i class=\"butler-icon bi-instagram\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:140
+msgid "<i class=\"butler-icon bi-lastfm\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:141
+msgid "<i class=\"butler-icon bi-linkedin-square\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:142
+msgid "<i class=\"butler-icon bi-medium\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:143
+msgid "<i class=\"butler-icon bi-pinterest-p\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:144
+msgid "<i class=\"butler-icon bi-reddit-alien\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:145
+msgid "<i class=\"butler-icon bi-slack\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:146
+msgid "<i class=\"butler-icon bi-slideshare\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:147
+msgid "<i class=\"butler-icon bi-snapchat-ghost\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:148
+msgid "<i class=\"butler-icon bi-soundcloud\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:149
+msgid "<i class=\"butler-icon bi-spotify\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:150
+msgid "<i class=\"butler-icon bi-stack-overflow\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:151
+msgid "<i class=\"butler-icon bi-tumblr\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:152
+msgid "<i class=\"butler-icon bi-twitch\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:153
+msgid "<i class=\"butler-icon bi-twitter-square\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:154
+msgid "<i class=\"butler-icon bi-vimeo\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:155
+msgid "<i class=\"butler-icon bi-weibo\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:156
+msgid "<i class=\"butler-icon bi-youtube-play\"></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:157
+msgid "<i class=\"butler-icon bi-bulldog\"><span class=\"path1\"></span><span class=\"path2\"></span><span class=\"path3\"></span><span class=\"path4\"></span><span class=\"path5\"></span><span class=\"path6\"></span><span class=\"path7\"></span><span class=\"path8\"></span><span class=\"path9\"></span><span class=\"path10\"></span><span class=\"path11\"></span><span class=\"path12\"></span><span class=\"path13\"></span><span class=\"path14\"></span><span class=\"path15\"></span><span class=\"path16\"></span><span class=\"path17\"></span><span class=\"path18\"></span><span class=\"path19\"></span><span class=\"path20\"></span><span class=\"path21\"></span><span class=\"path22\"></span><span class=\"path23\"></span><span class=\"path24\"></span></i>"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:172
+msgid "View list of available icons"
+msgstr ""
+
+#: inc/Top_Bar_Icons/Component.php:193
+msgid "Display RSS icon"
+msgstr ""
+
+#: template-parts/content/entry-attachment.php:33, template-parts/content/entry.php:31
 msgid "Previous:"
 msgstr ""
 
-#: template-parts/content/entry-attachment.php:43, template-parts/content/entry.php:33
+#: template-parts/content/entry-attachment.php:43, template-parts/content/entry.php:32
 msgid "Next:"
 msgstr ""
 
@@ -345,28 +681,18 @@ msgstr ""
 msgid "Page navigation"
 msgstr ""
 
-#: template-parts/footer/info.php:13
-msgid "https://wordpress.org/"
-msgstr ""
-
-#. translators: %s: CMS name, i.e. WordPress.
-#: template-parts/footer/info.php:16
-msgid "Proudly powered by %s"
-msgstr ""
-
-#. translators: Theme name.
-#: template-parts/footer/info.php:22
-msgid "Theme: %s by the contributors."
-msgstr ""
-
 #: template-parts/header/navigation.php:16
 msgid "Main menu"
 msgstr ""
 
-#: template-parts/header/navigation.php:39
+#: template-parts/header/navigation.php:39, template-parts/header/utility_navigation.php:39
 msgid "Open menu"
 msgstr ""
 
 #: template-parts/header/navigation.php:49
 msgid "Menu"
+msgstr ""
+
+#: template-parts/header/utility_navigation.php:16
+msgid "Utility menu"
 msgstr ""
