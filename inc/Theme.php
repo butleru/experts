@@ -155,6 +155,7 @@ class Theme {
 			new Styles\Component(),
 			new Top_Bar_Icons\Component(),
 			new Top_Bar_CTA\Component(),
+			new Hide_Page_Title\Component(),
 		];
 
 		if ( defined( 'JETPACK__VERSION' ) ) {
