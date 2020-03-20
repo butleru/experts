@@ -8,6 +8,7 @@
 namespace WP_Rig\WP_Rig\Editor;
 
 use WP_Rig\WP_Rig\Component_Interface;
+use function WP_Rig\WP_Rig\wp_rig;
 use function add_action;
 use function add_theme_support;
 
@@ -147,25 +148,25 @@ class Component implements Component_Interface {
 				],
 				[
 					'name'      => __( 'Regular', 'wp-rig' ),
-					'shortName' => __( 'S', 'wp-rig' ),
+					'shortName' => __( 'R', 'wp-rig' ),
 					'size'      => 20,
 					'slug'      => 'regular',
 				],
 				[
 					'name'      => __( 'Large', 'wp-rig' ),
-					'shortName' => __( 'M', 'wp-rig' ),
+					'shortName' => __( 'L', 'wp-rig' ),
 					'size'      => 24,
 					'slug'      => 'large',
 				],
 				[
 					'name'      => __( 'Larger', 'wp-rig' ),
-					'shortName' => __( 'L', 'wp-rig' ),
+					'shortName' => __( 'XL', 'wp-rig' ),
 					'size'      => 29,
 					'slug'      => 'larger',
 				],
 				[
 					'name'      => __( 'Largest', 'wp-rig' ),
-					'shortName' => __( 'XL', 'wp-rig' ),
+					'shortName' => __( 'XXL', 'wp-rig' ),
 					'size'      => 38,
 					'slug'      => 'largest',
 				],
