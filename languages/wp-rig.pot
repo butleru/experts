@@ -249,96 +249,100 @@ msgstr ""
 msgid "Theme Options"
 msgstr ""
 
-#: inc/Editor/Component.php:65, inc/Nav_Menus/Component.php:71
+#: inc/Editor/Component.php:66, inc/Nav_Menus/Component.php:71
 msgid "Primary"
 msgstr ""
 
-#: inc/Editor/Component.php:70
+#: inc/Editor/Component.php:71
 msgid "Secondary"
 msgstr ""
 
-#: inc/Editor/Component.php:74
+#: inc/Editor/Component.php:75
 msgid "Red"
 msgstr ""
 
-#: inc/Editor/Component.php:79
+#: inc/Editor/Component.php:80
 msgid "Green"
 msgstr ""
 
-#: inc/Editor/Component.php:84
+#: inc/Editor/Component.php:85
 msgid "Blue"
 msgstr ""
 
-#: inc/Editor/Component.php:89
+#: inc/Editor/Component.php:90
 msgid "Yellow"
 msgstr ""
 
-#: inc/Editor/Component.php:94
+#: inc/Editor/Component.php:95
 msgid "Black"
 msgstr ""
 
-#: inc/Editor/Component.php:99
+#: inc/Editor/Component.php:100
 msgid "Grey"
 msgstr ""
 
-#: inc/Editor/Component.php:104
+#: inc/Editor/Component.php:105
 msgid "White"
 msgstr ""
 
-#: inc/Editor/Component.php:109
+#: inc/Editor/Component.php:110
 msgid "Dusty daylight"
 msgstr ""
 
-#: inc/Editor/Component.php:114
+#: inc/Editor/Component.php:115
 msgid "Dusty sun"
 msgstr ""
 
-#: inc/Editor/Component.php:131, inc/Editor/Component.php:143
+#: inc/Editor/Component.php:132, inc/Editor/Component.php:144
 msgid "Small"
 msgstr ""
 
-#: inc/Editor/Component.php:132
+#: inc/Editor/Component.php:133
 msgid "XXS"
 msgstr ""
 
-#: inc/Editor/Component.php:137
+#: inc/Editor/Component.php:138
 msgid "Smaller"
 msgstr ""
 
-#: inc/Editor/Component.php:138
+#: inc/Editor/Component.php:139
 msgid "XS"
 msgstr ""
 
-#: inc/Editor/Component.php:144, inc/Editor/Component.php:150
+#: inc/Editor/Component.php:145
 msgid "S"
 msgstr ""
 
-#: inc/Editor/Component.php:149
+#: inc/Editor/Component.php:150
 msgid "Regular"
 msgstr ""
 
-#: inc/Editor/Component.php:155
-msgid "Large"
+#: inc/Editor/Component.php:151
+msgid "R"
 msgstr ""
 
 #: inc/Editor/Component.php:156
-msgid "M"
+msgid "Large"
 msgstr ""
 
-#: inc/Editor/Component.php:161
-msgid "Larger"
-msgstr ""
-
-#: inc/Editor/Component.php:162
+#: inc/Editor/Component.php:157
 msgid "L"
 msgstr ""
 
-#: inc/Editor/Component.php:167
-msgid "Largest"
+#: inc/Editor/Component.php:162
+msgid "Larger"
+msgstr ""
+
+#: inc/Editor/Component.php:163
+msgid "XL"
 msgstr ""
 
 #: inc/Editor/Component.php:168
-msgid "XL"
+msgid "Largest"
+msgstr ""
+
+#: inc/Editor/Component.php:169
+msgid "XXL"
 msgstr ""
 
 #: inc/Footers/Component.php:69

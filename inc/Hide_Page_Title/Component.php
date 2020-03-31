@@ -81,7 +81,7 @@ class Component implements Component_Interface {
 		$checked = ( get_post_meta( $post->ID, '_hide_page_title__meta_key', 1 ) ) ? 'checked' : '';
 		$initial_checked = ( empty( get_post_meta( $post->ID, '_hide_page_title__meta_key' ) ) ) ? 'checked' : '';
 		?>
-		<input type="checkbox" name="hide_page_title_field" <?php echo esc_html( $checked ); echo esc_html( $initial_checked ); ?> />
+		<input type="checkbox" name="hide_page_title_field" <?php echo esc_html( $checked ); ?><?php echo esc_html( $initial_checked ); ?> />
 		<label for="hide_page_title_field">Hide the page title</label>
 		<?php
 	}
