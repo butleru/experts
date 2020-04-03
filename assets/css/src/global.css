@@ -315,7 +315,7 @@ select {
 }
 
 .site-branding:last-child {
-    border-bottom: none;
+	border-bottom: none;
 }
 
 .site-branding-inner {

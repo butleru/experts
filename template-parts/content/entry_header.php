@@ -11,11 +11,8 @@ namespace WP_Rig\WP_Rig;
 
 <header class="entry-header">
 	<?php
-	$show_title = get_post_meta($post->ID, '_hide_page_title__meta_key');
-	echo '<pre>post id: ';
-	var_dump($show_title);
-	echo '</pre>';
-	if ( $show_title[0] == 0 ) {
+	$show_title = get_post_meta( $post->ID, '_hide_page_title__meta_key' );
+	if ( 0 == $show_title[0] ) {
 		get_template_part( 'template-parts/content/entry_title', get_post_type() );
 	}
 
