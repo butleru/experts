@@ -26,6 +26,7 @@ h6 {
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	clear: both;
+	text-transform: uppercase;
 }
 
 .entry-header h1.entry-title,

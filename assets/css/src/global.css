@@ -2,17 +2,17 @@
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Imports
-	# Custom properties
-	# Reset
-	# Typography
-	# Elements
-	# Links
+# Custom properties
+# Reset
+# Typography
+# Elements
+# Links
 # Accessibility
 # Layout
 # Forms
 # Header
-	# Main navigation menu
-	# Utility navigation menu
+# Main navigation menu
+# Utility navigation menu
 # Content navigation
 # Footer
 # Infinite scroll
@@ -32,10 +32,10 @@
 --------------------------------------------------------------*/
 
 /**
- * Text meant only for screen readers.
- * Re: word-wrap: Many screen reader and browser combinations announce broken
- * words as they would appear visually.
- */
+* Text meant only for screen readers.
+* Re: word-wrap: Many screen reader and browser combinations announce broken
+* words as they would appear visually.
+*/
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -48,6 +48,7 @@
 .screen-reader-text:focus {
 	background-color: #f1f1f1;
 	border-radius: 3px;
+	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
 	color: #21759b;
@@ -61,10 +62,9 @@
 	text-decoration: none;
 	top: 5px;
 	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
+	z-index: 100000;
 }
 
-/* Do not show the outline on the skip link target. */
 #primary[tabindex="-1"]:focus {
 	outline: 0;
 }
@@ -77,14 +77,15 @@
 	max-width: 100%;
 }
 
-@media (--sidebar-query) {
+@media screen and (--sidebar-query) {
 
-	.has-sidebar .site {
-		margin: 0 1em;
+	.has-sidebar .site .main-sidebar-container {
+		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 3fr 1fr;
 		grid-gap: 2rem;
 		justify-content: center;
+		width: var(--content-width);
 	}
 
 	.site-header {
@@ -125,7 +126,7 @@ input[type="submit"] {
 	border-radius: 3px;
 	background: #e6e6e6;
 	color: rgba(0, 0, 0, 0.8);
-	font-size: 0.75rem;
+	font-size: .75rem;
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
 	cursor: pointer;
@@ -150,21 +151,21 @@ input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
 input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="datetime"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
 textarea {
 	color: #666;
 	border: 1px solid #ccc;
@@ -172,21 +173,21 @@ textarea {
 	padding: 3px;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
 input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="datetime"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="range"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
 textarea:focus {
 	color: #111;
 }
@@ -202,7 +203,6 @@ select {
 .site-header {
 	padding-bottom: 1em;
 	position: relative;
-	border-bottom: 3px solid var(--color-theme-primary);
 }
 
 .top-header-bar-inner {
@@ -234,7 +234,7 @@ select {
 	margin-left: 0;
 }
 
-@media (--tablet-icon-query) {
+@media screen and (--tablet-icon-query) {
 
 	.social-icon .butler-icon-3x {
 		font-size: 4vw;
@@ -258,7 +258,7 @@ select {
 	transform: skew(-30deg, 0deg);
 }
 
-@media (--narrow-content-query) {
+@media screen and (--narrow-content-query) {
 
 	.social-icon .butler-icon-3x {
 		font-size: 3rem;
@@ -314,27 +314,18 @@ select {
 	border-top: none;
 }
 
-.site-branding:last-child {
-    border-bottom: none;
-}
-
 .site-branding-inner {
 	width: var(--content-width);
 	margin: auto;
+	max-width: 100%;
 	display: flex;
 }
 
-@media (--narrow-content-query) {
-
-	.site-branding-inner {
-		width: var(--narrow-width);
-	}
-}
-
 .site-title {
-	margin: 0 1em;
+	margin: 0 1em 0 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	text-transform: uppercase;
 	font-size: 38px;
 	font-weight: 700;
 	line-height: 1.2;
@@ -350,6 +341,7 @@ select {
 	margin: 0.4375em 0 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	text-transform: uppercase;
 	font-size: 17px;
 	font-weight: inherit;
 	line-height: 1.4;
@@ -357,6 +349,12 @@ select {
 	color: #757575;
 }
 
+@media (--narrow-content-query) {
+
+	.site-branding {
+		padding-left: 1rem;
+	}
+}
 /*--------------------------------------------------------------
 ## Basic navigation menus - handles submenu and small screen toggle
 --------------------------------------------------------------*/
@@ -373,23 +371,20 @@ select {
 	background: transparent;
 }
 
-.nav--toggle-small .menu {
-	display: none;
-}
-
+.nav--toggle-small .menu,
 .nav--toggle-sub .dropdown,
 .nav--toggle-sub .dropdown-toggle {
 	display: none;
 }
 
-@media (--narrow-menu-query) {
+@media screen and (--narrow-menu-query) {
 
 	.nav--toggle-small.nav--toggled-on .menu {
 		display: block;
 	}
 }
 
-@media (--wide-menu-query) {
+@media screen and (--wide-menu-query) {
 
 	.nav--toggle-small .menu-toggle {
 		display: none;
@@ -458,8 +453,8 @@ select {
 	}
 
 	/* Need menu-item-has-children for non-JS */
-	.nav--toggle-sub li.menu-item-has-children,
-	.nav--toggle-sub li.menu-item--has-toggle {
+	.nav--toggle-sub li.menu-item--has-toggle,
+	.nav--toggle-sub li.menu-item-has-children {
 		position: relative;
 		padding-right: var(--dropdown-symbol-width);
 	}
@@ -468,8 +463,8 @@ select {
 	 * If the dropdown toggle is active with JS, then
 	 * we'll take care of showing the submenu with JS.
 	 */
-	.nav--toggle-sub li:hover > ul,
 	.nav--toggle-sub li.menu-item--toggled-on > ul,
+	.nav--toggle-sub li:hover > ul,
 	.nav--toggle-sub li:not(.menu-item--has-toggle):focus > ul {
 		display: block;
 	}
@@ -498,6 +493,7 @@ select {
 	max-width: var(--content-width);
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	text-transform: uppercase;
 }
 
 .main-navigation a {
@@ -509,8 +505,8 @@ select {
 	font-size: var(--font-size-large);
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus {
+.main-navigation a:focus,
+.main-navigation a:hover {
 	text-decoration: underline;
 }
 
@@ -525,7 +521,7 @@ select {
 	padding-left: 1em;
 }
 
-@media (--wide-menu-query) {
+@media screen and (--wide-menu-query) {
 
 	.main-navigation ul li a {
 		padding: 0.4em 0.5em;
@@ -576,7 +572,7 @@ select {
 	display: block;
 	margin: 0 auto;
 	padding: 0 1em;
-	font-family: var(--highlight-font-family);
+	font-family: var(--global-font-family);
 	font-stretch: condensed;
 	background: var(--color-theme-primary);
 }
@@ -590,15 +586,15 @@ select {
 .utility-navigation a {
 	display: block;
 	width: 100%;
-	padding: 0.5em 0;
+	padding: .5em 0;
 	text-decoration: none;
 	color: #fff;
 	font-size: var(--font-size-small);
 }
 /* stylelint-enable */
 
-.utility-navigation a:hover,
-.utility-navigation a:focus {
+.utility-navigation a:focus,
+.utility-navigation a:hover {
 	text-decoration: underline;
 }
 
@@ -612,7 +608,8 @@ select {
 .utility-navigation ul ul li {
 	padding-left: 1em;
 }
-@media (--narrow-menu-query) {
+
+@media screen and (--narrow-menu-query) {
 
 	.nav--toggle-small.utility-navigation {
 		background: transparent;
@@ -622,17 +619,53 @@ select {
 		bottom: 6rem;
 	}
 
+	.nav--toggle-small.utility-navigation.nav--toggled-on {
+		right: 0;
+		bottom: initial;
+		top: 0;
+	}
+
+	.nav--toggle-small.utility-navigation.nav--toggled-on .menu-toggle {
+		margin-top: 0;
+		margin-bottom: 0;
+		width: 250px;
+		text-align: right;
+		color: #fff;
+		background: rgba(0, 0, 0, 0.75);
+		border: none;
+		transition: all 0.3s linear;
+	}
+
+	.nav--toggle-small.utility-navigation.nav--toggled-on .menu-toggle .bi-bars {
+		display: none;
+	}
+
+	.butler-icon.bi-close {
+		display: none;
+	}
+
+	.nav--toggle-small.utility-navigation.nav--toggled-on .menu-toggle .bi-close {
+		display: block;
+	}
+
 	.utility-menu-container {
-		background: #000;
+		background: rgba(0, 0, 0, 0.75);
+		text-align: right;
+	}
+
+	.nav--toggle-small.utility-navigation.nav--toggled-on .utility-menu-container {
 		padding: 0 1rem;
 		position: absolute;
 		right: 0;
 		width: 250px;
-		top: 2.5rem;
-		text-align: right;
+		top: 2.45rem;
+		height: 1000px;
+		z-index: 1;
+		transition: all 0.3s linear;
 	}
 }
-@media (--content-query) {
+
+@media screen and (--content-query) {
 
 	.utility-navigation ul li a {
 		padding: 0.4em 0.5em;
@@ -679,24 +712,26 @@ select {
 # Content navigation
 --------------------------------------------------------------*/
 .site-main .comment-navigation,
-.site-main .posts-navigation,
+.site-main .pagination,
 .site-main .post-navigation,
-.site-main .pagination {
+.site-main .posts-navigation {
 	border-bottom: 1px solid #111;
 	margin: 0 auto 2em;
+	max-width: 90rem;
 	max-width: var(--content-width);
 	overflow: hidden;
 	padding: 0 1.5rem 2em;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	text-transform: uppercase;
 }
 
-@media (--content-query) {
+@media screen and (--content-query) {
 
 	.site-main .comment-navigation,
-	.site-main .posts-navigation,
+	.site-main .pagination,
 	.site-main .post-navigation,
-	.site-main .pagination {
+	.site-main .posts-navigation {
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -707,15 +742,15 @@ select {
 }
 
 .comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
+.post-navigation .nav-previous,
+.posts-navigation .nav-previous {
 	width: 50%;
 	flex: 1 0 50%;
 }
 
 .comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
+.post-navigation .nav-next,
+.posts-navigation .nav-next {
 	text-align: end;
 	flex: 1 0 50%;
 }
@@ -731,7 +766,10 @@ select {
 }
 
 .pagination .nav-links {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
@@ -750,25 +788,25 @@ select {
 	color: var(--color-link);
 }
 
-.pagination a:hover,
+.pagination a:active,
 .pagination a:focus,
-.pagination a:active {
+.pagination a:hover {
 	border-color: #00a0d2;
 }
 
-.pagination .prev,
-.pagination .next {
+.pagination .next,
+.pagination .prev {
 	min-width: auto;
 	border-color: transparent;
 	text-decoration: underline;
 }
 
-.pagination .prev:hover,
-.pagination .prev:focus,
-.pagination .prev:active,
-.pagination .next:hover,
+.pagination .next:active,
 .pagination .next:focus,
-.pagination .next:active {
+.pagination .next:hover,
+.pagination .prev:active,
+.pagination .prev:focus,
+.pagination .prev:hover {
 	border-color: transparent;
 }
 
@@ -789,6 +827,7 @@ select {
 	padding: 2em 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	text-transform: uppercase;
 	background: var(--color-theme-primary);
 	color: var(--color-theme-white);
 	line-height: 0.8;
@@ -799,14 +838,27 @@ select {
 	font-size: var(--font-size-small);
 }
 
+/* stylelint-disable */
+.site-info a {
+	color: var(--color-theme-secondary);
+}
+/* stylelint-enable */
+
+.site-info a:visited,
+.site-info a:hover,
+.site-info a:focus,
+.site-info a:active {
+	color: var(--color-theme-yellow);
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer,
 .infinite-scroll .pagination,
-.infinite-scroll.neverending .site-footer {
+.infinite-scroll .posts-navigation {
 
 	/* Theme Footer (when set to scrolling) */
 	display: none;

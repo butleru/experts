@@ -50,6 +50,7 @@
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	font-size: 80%;
+	text-transform: uppercase;
 }
 
 .comment-meta a,
@@ -146,6 +147,7 @@
 	padding: 0.5em 1.4em;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	text-transform: uppercase;
 	font-size: 85%;
 	color: #000;
 	line-height: 1.3;
@@ -172,6 +174,7 @@
 	margin-top: -1em;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	text-transform: uppercase;
 	font-size: 0.9em;
 	font-style: italic;
 	background: hsl(0, 0%, 95%);
@@ -189,6 +192,7 @@
 	font-size: 0.9em;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	text-transform: uppercase;
 	padding-bottom: 0.4em;
 }
 

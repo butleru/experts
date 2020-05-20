@@ -36,6 +36,12 @@ hr {
 }
 /* stylelint-enable */
 
+.header-rule {
+	margin: 0;
+	height: 3px;
+	background-color: var(--color-theme-primary);
+}
+
 ul,
 ol {
 	margin-bottom: 1.5rem;

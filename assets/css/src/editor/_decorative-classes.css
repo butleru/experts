@@ -1,0 +1,14 @@
+/*--------------------------------------------------------------
+## Decroative Classes
+--------------------------------------------------------------*/
+
+/*
+ * Available decroative class selectors:
+ * .blue-top
+ */
+
+.blue-top {
+	border: 1px solid #0090c7;
+	border-top-width: 1rem;
+	padding: 2rem 1rem;
+}

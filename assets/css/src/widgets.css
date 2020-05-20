@@ -11,6 +11,17 @@
 .widget-area .widget {
 	margin-left: 0;
 	margin-right: 0;
+	border: 1px solid var(--color-theme-primary);
+}
+
+.widget-title {
+	background: var(--color-theme-primary);
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0.75rem;
+	margin-top: 0;
+	text-align: center;
+	font-size: 1.25rem;
 }
 
 .widget li {
@@ -56,9 +67,15 @@
 	padding-bottom: 0.5em;
 }
 
+.menu-sidebar-menu-container {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
 .widget_pages a,
 .widget_nav_menu a {
 	display: block;
+	font-family: var(--global-font-family);
 	padding: 0.6em 0;
 	text-decoration: none;
 	border-bottom: 1px dashed #808080;
@@ -71,6 +88,12 @@
 	text-decoration: none;
 	border-bottom: 1px dashed #808080;
 }
+
+/* stylelint-disable */
+.widget_nav_menu li:last-child a {
+	border-bottom: none;
+}
+/*stylelint-enable */
 
 .widget_pages li,
 .widget_nav_menu li {

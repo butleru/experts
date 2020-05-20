@@ -10,7 +10,11 @@ namespace WP_Rig\WP_Rig;
 use WP_Customize_Control;
 
 /**
+<<<<<<< HEAD
+ * Custom links and social, icons
+=======
  * Custom links and social icons class
+>>>>>>> 7bd0a5884449cc0a72fb4bfc69de621e6d6f242d
  */
 class Butler_Links_Social {
 	/**

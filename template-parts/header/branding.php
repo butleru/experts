@@ -9,7 +9,7 @@ namespace WP_Rig\WP_Rig;
 
 ?>
 
-<div class="site-branding">
+<div class="site-branding" role="heading" aria-level="1">
 	<div class="site-branding-inner">
 		<?php the_custom_logo(); ?>
 

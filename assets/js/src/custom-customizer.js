@@ -1,5 +1,5 @@
-jQuery( document ).ready(function($) {
-	"use strict";
+jQuery( document ).ready( function( $ ) {
+	'use strict';
 
 	/**
 	 * Sortable Repeater Custom Control
@@ -10,35 +10,35 @@ jQuery( document ).ready(function($) {
 	 */
 
 	// Update the values for all our input fields and initialise the sortable repeater
-	$('.sortable_repeater_control').each(function() {
+	$( '.sortable_repeater_control' ).each( function() {
 		// If there is an existing customizer value, populate our rows
-		var defaultValuesArray = $(this).find('.customize-control-sortable-repeater').val().split(',');
+		var defaultValuesArray = $( this ).find( '.customize-control-sortable-repeater' ).val().split( ',' );
 		var numRepeaterItems = defaultValuesArray.length;
 
-		if(numRepeaterItems > 0) {
+		if ( numRepeaterItems > 0 ) {
 			// Add the first item to our existing input field
-			$(this).find('.repeater-input').val(defaultValuesArray[0]);
+			$( this ).find( '.repeater-input' ).val( defaultValuesArray[ 0 ] );
 			// Create a new row for each new value
-			if(numRepeaterItems > 1) {
+			if( numRepeaterItems > 1 ) {
 				var i;
-				for (i = 1; i < numRepeaterItems; ++i) {
-					skyrocketAppendRow($(this), defaultValuesArray[i]);
+				for ( i = 1; i < numRepeaterItems; ++i ) {
+					skyrocketAppendRow( $( this ), defaultValuesArray[ i ] );
 				}
 			}
 		}
-	});
+	} );
 
 	// Make our Repeater fields sortable
-	$(this).find('.sortable').sortable({
-		update: function(event, ui) {
-			skyrocketGetAllInputs($(this).parent());
+	$( this ).find( '.sortable' ).sortable( {
+		update: function( event, ui ) {
+			skyrocketGetAllInputs( $( this ).parent());
 		}
 	});
 
 	// Remove item starting from it's parent element
-	$('.sortable').on('click', '.customize-control-sortable-repeater-delete', function(event) {
+	$( '.sortable' ).on( 'click', '.customize-control-sortable-repeater-delete', function( event ) {
 		event.preventDefault();
-		var numItems = $(this).parent().parent().find('.repeater').length;
+		var numItems = $( this ).parent().parent().find( '.repeater' ).length;
 
 		if(numItems > 1) {
 			$(this).parent().slideUp('fast', function() {
@@ -249,7 +249,7 @@ jQuery( document ).ready(function($) {
 		var bodyfontcontrol = _wpCustomizeSettings.controls[customizerControlName];
 
 		// Find the index of the selected font
-		var indexes = $.map(bodyfontcontrol.skyrocketfontslist, function(obj, index) {
+		var indexes = $.map(bodyfontcontrol.butlerfontslist, function(obj, index) {
 			if(obj.family === selectedFont) {
 				return index;
 			}
@@ -257,7 +257,7 @@ jQuery( document ).ready(function($) {
 		var index = indexes[0];
 
 		// For the selected Google font show the available weight/style variants
-		$.each(bodyfontcontrol.skyrocketfontslist[index].variants, function(val, text) {
+		$.each(bodyfontcontrol.butlerfontslist[index].variants, function(val, text) {
 			elementRegularWeight.append(
 				$('<option></option>').val(text).html(text)
 			);
@@ -281,14 +281,14 @@ jQuery( document ).ready(function($) {
 			elementItalicWeight.prop('disabled', 'disabled');
 		}
 		if(elementBoldWeightCount == 0) {
-			elementBoldWeight.append(
+			/*elementBoldWeight.append(
 				$('<option></option>').val('').html('Not Available for this font')
 			);
-			elementBoldWeight.prop('disabled', 'disabled');
+			elementBoldWeight.prop('disabled', 'disabled');*/
 		}
 
 		// Update the font category based on the selected font
-		$(this).parent().parent().find('.google-fonts-category').val(bodyfontcontrol.skyrocketfontslist[index].category);
+		$(this).parent().parent().find('.google-fonts-category').val(bodyfontcontrol.butlerfontslist[index].category);
 
 		skyrocketGetAllSelects($(this).parent().parent());
 	});

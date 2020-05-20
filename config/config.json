@@ -1,14 +1,14 @@
 {
   "theme": {
-    "slug": "butler-theme",
-    "name": "Butler Theme",
+    "slug": "bshs",
+    "name": "BSHS Theme",
     "author": "Butler University Information Technology Department",
     "PHPNamespace": "Butler\\Butler"
   },
   "dev": {
     "browserSync": {
       "live": true,
-      "proxyURL": "localhost/butler-theme/",
+      "proxyURL": "localhost/bshs/",
       "bypassPort": "8181",
       "https": false
     }
