@@ -1,14 +1,14 @@
 {
   "theme": {
-    "slug": "bshs",
-    "name": "BSHS Theme",
+    "slug": "marketplace",
+    "name": "Butler Marketplace",
     "author": "Butler University Information Technology Department",
     "PHPNamespace": "Butler\\Butler"
   },
   "dev": {
     "browserSync": {
       "live": true,
-      "proxyURL": "localhost/bshs/",
+      "proxyURL": "localhost/marketplace/",
       "bypassPort": "8181",
       "https": false
     }
