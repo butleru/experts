@@ -56,11 +56,11 @@ class Component implements Component_Interface {
 	public function save( $post_id ) {
 		global $post;
 
-		if ( ! isset( $_POST['hide_page_title_nonce_field'] ) || ! wp_verify_nonce( $_POST['hide_page_title_nonce_field'], 'hide_page_title_nonce' ) ) {
+		if ( ! isset( $_POST['hide_page_title_nonce_field'] ) || ! wp_verify_nonce( $_POST['hide_page_title_nonce_field'], 'hide_page_title_nonce' ) ) { // phpcs:ignore WordPress.Security
 			return;
 		}
 
-		$update_value = ( wp_unslash( $_POST['hide_page_title_field'] ) ) == 'on' ? 1 : 0;
+		$update_value = ( isset( $_POST['hide_page_title_field'] ) && filter_var( wp_unslash( $_POST['hide_page_title_field'], FILTER_SANITIZE_STRING ) ) ) == 'on' ? 1 : 0;
 
 		if ( isset( $update_value ) ) {
 			$update = update_post_meta(

@@ -7,10 +7,10 @@
 
 :root {
 	--global-font-color: #333;
-	--global-font-family: "Raleway", serif;
+	--global-font-family: "Sentinel Book", Georgia, Times, serif;
 	--global-font-size: 20;
 	--global-font-line-height: 1.4;
-	--highlight-font-family: "Roboto Slab", "Helvetica Neue", "Arial Narrow", sans-serif;
+	--highlight-font-family: "SackersGothicMedium", Arial, Helvetica, sans-serif;
 	--content-width: 90rem;
 	--narrow-width: 25rem;
 	--dropdown-symbol-width: 0.7em;

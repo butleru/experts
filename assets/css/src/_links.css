@@ -27,3 +27,14 @@ a:hover,
 a:active {
 	outline: 0;
 }
+
+.social-icons a,
+.social-icons a:visited,
+.social-icons a:active {
+	color: var(--color-theme-primary);
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+	color: var(--color-theme-secondary);
+}

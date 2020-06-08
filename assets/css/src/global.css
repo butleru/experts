@@ -227,7 +227,7 @@ select {
 }
 
 .social-icon {
-	margin: 0 1rem;
+	margin: 0 .5rem;
 }
 
 .social-icon:first-child {
@@ -493,7 +493,7 @@ select {
 .main-navigation {
 	clear: both;
 	display: block;
-	margin: 1rem auto;
+	margin: 1rem auto 0;
 	padding: 0 1em;
 	max-width: var(--content-width);
 	font-family: var(--highlight-font-family);
@@ -575,7 +575,7 @@ select {
 	clear: both;
 	display: block;
 	margin: 0 auto;
-	padding: 0 1em;
+	padding: .1rem 1em;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	background: var(--color-theme-primary);
