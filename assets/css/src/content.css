@@ -3,6 +3,7 @@
 ----------------------------------------------------------------
 # Imports
 	# Blocks
+	# Decorative Classes
 	# Media
 		# Captions
 		# Galleries (Legacy)
@@ -16,6 +17,7 @@
 # Imports
 --------------------------------------------------------------*/
 @import "_blocks.css";
+@import "_decorative-classes.css";
 @import "_media.css";
 
 /*--------------------------------------------------------------
@@ -36,6 +38,7 @@
 .entry-footer {
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	text-transform: uppercase;
 	font-size: 80%;
 }
 
@@ -52,10 +55,34 @@
 	margin: 0 auto;
 }
 
+.page-featured-image {
+	position: relative;
+	height: 415px;
+	overflow: hidden;
+}
+
+.page-featured-image img {
+	width: 100%;
+	position: absolute;
+	top: -100%;
+	left: 0;
+	right: 0;
+	bottom: -100%;
+	margin: auto;
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+}
+
+@media (--narrow-content-query) {
+
+	.entry-content {
+		margin: 0;
+	}
+
 }
 
 .page-content > *,
@@ -83,6 +110,10 @@
 
 @media (--content-query) {
 
+	.top-header-bar,
+	.top-header-bar-inner,
+	.site-branding,
+	.site-title,
 	.page-content > *,
 	.entry-content > *,
 	.entry-summary > *,
@@ -93,9 +124,10 @@
 	.post-navigation,
 	.page-navigation,
 	.comments-area {
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
 	}
+
 }
 
 .entry-content ul,
@@ -254,6 +286,24 @@
 	background-color: var(--color-theme-white);
 }
 
+.has-theme-orange-color,
+.has-theme-orange-color a {
+	color: var(--color-theme-orange);
+}
+
+.has-theme-orange-background-color {
+	background-color: var(--color-theme-orange);
+}
+
+.has-theme-pink-color,
+.has-theme-pink-color a {
+	color: var(--color-theme-pink);
+}
+
+.has-theme-pink-background-color {
+	background-color: var(--color-theme-pink);
+}
+
 .has-custom-daylight-color,
 .has-custom-daylight-color a {
 	color: var(--color-custom-daylight);
@@ -276,6 +326,14 @@
 ## Custom block font sizes.
 --------------------------------------------------------------*/
 
+.has-smallest-font-size {
+	font-size: var(--font-size-smallest);
+}
+
+.has-smaller-font-size {
+	font-size: var(--font-size-smaller);
+}
+
 .has-small-font-size {
 	font-size: var(--font-size-small);
 }
@@ -290,4 +348,8 @@
 
 .has-larger-font-size {
 	font-size: var(--font-size-larger);
+}
+
+.has-largest-font-size {
+	font-size: var(--font-size-largest);
 }

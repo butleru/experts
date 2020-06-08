@@ -47,6 +47,7 @@ if ( ! wp_rig()->is_utility_nav_menu_active() ) {
 		?>
 	>
 		<i class="butler-icon bi-bars"></i>
+		<i class="butler-icon butler-icon-2x bi-close"></i>
 	</button>
 	<div class="utility-menu-container">
 		<div class="utility-menu-container-inner">

@@ -371,6 +371,10 @@ input[type="number"]:focus {
 	padding-right: 8px;
 	background-color: #eee;
 	color: #999;
+	color: #fff;
+	font-family: Trebuchet, Arial, sans-serif;
+	font-weight: 700;
+	box-sizing: border-box;
 	text-align: right;
 }
 
@@ -501,6 +505,9 @@ input[type="number"]:focus {
 /* ==========================================================================
    Alpha Color Picker
    ========================================================================== */
+.customize-control-alpha-color .wp-picker-container .iris-picker {
+	border-bottom: none;
+}
 
 .customize-control-alpha-color .wp-picker-container {
 	max-width: 257px;
@@ -527,6 +534,10 @@ input[type="number"]:focus {
 	background: #fff;
 	padding: 0 11px 10px;
 	position: relative;
+}
+
+.wp-picker-container .wp-picker-open ~ .wp-picker-holder .alpha-color-picker-container {
+	display: block;
 }
 
 .alpha-color-picker-container .ui-widget-content,
@@ -646,23 +657,19 @@ input[type="number"]:focus {
 	box-shadow: none;
 }
 
+/* stylelint-disable */
 .wp-picker-container .iris-picker,
 .wp-picker-container .alpha-color-picker-container {
 	border-radius: 0;
 	border: none;
 }
+/* stylelint-enable */
 
-.customize-control-alpha-color .wp-picker-container .iris-picker {
-	border-bottom: none;
-}
-
+/* stylelint-disable */
 .wp-picker-container .alpha-color-picker-container {
 	width: 233px;
 }
-
-.wp-picker-container .wp-picker-open ~ .wp-picker-holder .alpha-color-picker-container {
-	display: block;
-}
+/* stylelint-enable */
 
 /* ==========================================================================
    Google Fonts Select

@@ -104,6 +104,16 @@ class Component implements Component_Interface, Templating_Component_Interface {
 			wp_enqueue_style( 'wp-rig-fonts', $google_fonts_url, [], null ); // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
 		}
 
+		// Enqueue Butler Brand Fonts.
+		$butler_fonts_urls = $this->get_butler_fonts_url();
+		$butler_fonts_urls_counter = 0;
+		if ( ! empty( $butler_fonts_urls ) ) {
+			foreach ( $butler_fonts_urls as $butler_fonts_url ) {
+				wp_enqueue_style( 'wp-rig-brand-fonts-' . $butler_fonts_urls_counter, $butler_fonts_url, [], null ); // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
+				$butler_fonts_urls_counter ++;
+			}
+		}
+
 		$css_uri = get_theme_file_uri( '/assets/css/' );
 		$css_dir = get_theme_file_path( '/assets/css/' );
 
@@ -185,6 +195,12 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		$google_fonts_url = $this->get_google_fonts_url();
 		if ( ! empty( $google_fonts_url ) ) {
 			add_editor_style( $this->get_google_fonts_url() );
+		}
+
+		// Enqueue Butler Brand Fonts.
+		$butler_fonts_url = $this->get_butler_fonts_url();
+		if ( ! empty( $butler_fonts_url ) ) {
+			add_editor_style( $this->get_butler_fonts_url() );
 		}
 
 		// Enqueue block editor stylesheet.
@@ -424,5 +440,60 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		];
 
 		return add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
+	}
+
+	/**
+	 * Returns Butler Brand Fonts used in theme.
+	 *
+	 * @return array Associative array of $font_name => $font_variants pairs.
+	 */
+	protected function get_butler_fonts() : array {
+		if ( is_array( $this->butler_fonts ) ) {
+			return $this->butler_fonts;
+		}
+
+		$butler_fonts = [
+			'liberator',
+			'sackers',
+			'tungstennarrow',
+			'sentinel',
+		];
+
+		/**
+		 * Filters default Butler Brand Fonts.
+		 *
+		 * @param array $butler_fonts Associative array of $font_name => $font_variants pairs.
+		 */
+		$this->butler_fonts = (array) apply_filters( 'wp_rig_butler_fonts', $butler_fonts );
+
+		return $this->butler_fonts;
+	}
+
+	/**
+	 * Returns the Butler Brand Fonts URL to use for enqueuing Butler Fonts CSS.
+	 *
+	 * Uses `latin` subset by default. To use other subsets, add a `subset` key to $query_args and the desired value.
+	 *
+	 * @return string Butler Brand Fonts URL, or empty string if no Butler Brand Fonts should be used.
+	 */
+	protected function get_butler_fonts_url() : array {
+		$butler_fonts = $this->get_butler_fonts();
+
+		if ( empty( $butler_fonts ) ) {
+			return '';
+		}
+
+		$font_families = [];
+
+		foreach ( $butler_fonts as $font_name ) {
+			$font_families[] = $font_name;
+		}
+
+		$butler_font_cdn_url = 'https://butler-cdn.s3.amazonaws.com/fonts/';
+		foreach ( $font_families as $font_family ) {
+			$butler_fonts_url_array[] = $butler_font_cdn_url . $font_family . '.css';
+		}
+
+		return $butler_fonts_url_array;
 	}
 }

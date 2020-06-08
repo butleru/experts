@@ -8,7 +8,6 @@
 namespace WP_Rig\WP_Rig\Editor;
 
 use WP_Rig\WP_Rig\Component_Interface;
-use function WP_Rig\WP_Rig\wp_rig;
 use function add_action;
 use function add_theme_support;
 
@@ -69,12 +68,13 @@ class Component implements Component_Interface {
 				],
 				[
 					'name'  => __( 'Secondary', 'wp-rig' ),
+					'slug'  => 'theme-secondary',
 					'color' => '#d1e0d7',
 				],
 				[
 					'name'  => __( 'Red', 'wp-rig' ),
 					'slug'  => 'theme-red',
-					'color' => '#c0392b',
+					'color' => '#b31100',
 				],
 				[
 					'name'  => __( 'Green', 'wp-rig' ),
@@ -104,7 +104,17 @@ class Component implements Component_Interface {
 				[
 					'name'  => __( 'White', 'wp-rig' ),
 					'slug'  => 'theme-white',
-					'color' => '#ecf0f1',
+					'color' => '#fff',
+				],
+				[
+					'name'  => __( 'Orange', 'wp-rig' ),
+					'slug'  => 'theme-orange',
+					'color' => '#eaaa00',
+				],
+				[
+					'name'  => __( 'Pink', 'wp-rig' ),
+					'slug'  => 'theme-pink',
+					'color' => '#e31c70',
 				],
 				[
 					'name'  => __( 'Dusty daylight', 'wp-rig' ),
@@ -129,7 +139,7 @@ class Component implements Component_Interface {
 			'editor-font-sizes',
 			[
 				[
-					'name'      => __( 'Small', 'wp-rig' ),
+					'name'      => __( 'Smallest', 'wp-rig' ),
 					'shortName' => __( 'XXS', 'wp-rig' ),
 					'size'      => 8,
 					'slug'      => 'smallest',
@@ -148,25 +158,25 @@ class Component implements Component_Interface {
 				],
 				[
 					'name'      => __( 'Regular', 'wp-rig' ),
-					'shortName' => __( 'R', 'wp-rig' ),
+					'shortName' => __( 'S', 'wp-rig' ),
 					'size'      => 20,
 					'slug'      => 'regular',
 				],
 				[
 					'name'      => __( 'Large', 'wp-rig' ),
-					'shortName' => __( 'L', 'wp-rig' ),
+					'shortName' => __( 'M', 'wp-rig' ),
 					'size'      => 24,
 					'slug'      => 'large',
 				],
 				[
 					'name'      => __( 'Larger', 'wp-rig' ),
-					'shortName' => __( 'XL', 'wp-rig' ),
+					'shortName' => __( 'L', 'wp-rig' ),
 					'size'      => 29,
 					'slug'      => 'larger',
 				],
 				[
 					'name'      => __( 'Largest', 'wp-rig' ),
-					'shortName' => __( 'XXL', 'wp-rig' ),
+					'shortName' => __( 'XL', 'wp-rig' ),
 					'size'      => 38,
 					'slug'      => 'largest',
 				],
