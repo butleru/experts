@@ -7,11 +7,15 @@
 
 namespace WP_Rig\WP_Rig;
 
+$hide_title = get_post_meta( $post->ID, '_hide_page_title__meta_key' );
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'entry' ); ?>>
 	<?php
-	get_template_part( 'template-parts/content/entry_header', get_post_type() );
+	if ( 0 == $hide_title[0] ) {
+		get_template_part( 'template-parts/content/entry_header', get_post_type() );
+	}
 
 	if ( is_search() ) {
 		get_template_part( 'template-parts/content/entry_summary', get_post_type() );
@@ -26,7 +30,7 @@ namespace WP_Rig\WP_Rig;
 <?php
 if ( is_singular( get_post_type() ) ) {
 	// Show post navigation only when the post type is 'post' or has an archive.
-	if ( ( 'post' === get_post_type() || get_post_type_object( get_post_type() )->has_archive ) && 'espresso_events' !== get_post_type() ) {
+	if ( 'post' === get_post_type() || get_post_type_object( get_post_type() )->has_archive ) {
 		the_post_navigation(
 			[
 				'prev_text' => '<div class="post-navigation-sub"><span>' . esc_html__( 'Previous:', 'wp-rig' ) . '</span></div>%title',

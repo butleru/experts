@@ -43,6 +43,6 @@ wp_rig()->print_styles( 'wp-rig-content' );
 <?php
 get_sidebar();
 ?>
-</div><!-- #content-container -->
+</div>
 <?php
 get_footer();

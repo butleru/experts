@@ -51,135 +51,135 @@ msgstr ""
 msgid "WP Rig requires at least PHP version %1$s. You are running version %2$s. Please update and try again."
 msgstr ""
 
-#: inc/Butler_Links_Social.php:98
+#: inc/Butler_Links_Social.php:102
 msgid "Follow me on Behance"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:99
+#: inc/Butler_Links_Social.php:103
 msgid "Fork me on Bitbucket"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:100
+#: inc/Butler_Links_Social.php:104
 msgid "Follow me on CodePen"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:101
+#: inc/Butler_Links_Social.php:105
 msgid "Watch me on DeviantArt"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:102
+#: inc/Butler_Links_Social.php:106
 msgid "Join me on Discord"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:103
+#: inc/Butler_Links_Social.php:107
 msgid "Follow me on Dribbble"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:104
+#: inc/Butler_Links_Social.php:108
 msgid "favorite me on Etsy"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:105
+#: inc/Butler_Links_Social.php:109
 msgid "Like us on Facebook"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:106
+#: inc/Butler_Links_Social.php:110
 msgid "Connect with me on Flickr"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:107
+#: inc/Butler_Links_Social.php:111
 msgid "Follow me on Foursquare"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:108
+#: inc/Butler_Links_Social.php:112
 msgid "Fork me on GitHub"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:109
+#: inc/Butler_Links_Social.php:113
 msgid "Follow me on Instagram"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:110
+#: inc/Butler_Links_Social.php:114
 msgid "Back me on Kickstarter"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:111
+#: inc/Butler_Links_Social.php:115
 msgid "Follow me on Last.fm"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:112
+#: inc/Butler_Links_Social.php:116
 msgid "Connect with me on LinkedIn"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:113
+#: inc/Butler_Links_Social.php:117
 msgid "Follow me on Medium"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:114
+#: inc/Butler_Links_Social.php:118
 msgid "Support me on Patreon"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:115
+#: inc/Butler_Links_Social.php:119
 msgid "Follow me on Pinterest"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:116
+#: inc/Butler_Links_Social.php:120
 msgid "Connect with me on Google+"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:117
+#: inc/Butler_Links_Social.php:121
 msgid "Join me on Reddit"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:118
+#: inc/Butler_Links_Social.php:122
 msgid "Join me on Slack"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:119
+#: inc/Butler_Links_Social.php:123
 msgid "Follow me on SlideShare"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:120
+#: inc/Butler_Links_Social.php:124
 msgid "Add me on Snapchat"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:121
+#: inc/Butler_Links_Social.php:125
 msgid "Follow me on SoundCloud"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:122
+#: inc/Butler_Links_Social.php:126
 msgid "Follow me on Spotify"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:123
+#: inc/Butler_Links_Social.php:127
 msgid "Join me on Stack Overflow"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:124
+#: inc/Butler_Links_Social.php:128
 msgid "Follow me on Tumblr"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:125
+#: inc/Butler_Links_Social.php:129
 msgid "Follow me on Twitch"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:126
+#: inc/Butler_Links_Social.php:130
 msgid "Follow me on Twitter"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:127
+#: inc/Butler_Links_Social.php:131
 msgid "Follow me on Vimeo"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:128
+#: inc/Butler_Links_Social.php:132
 msgid "Follow me on weibo"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:129
+#: inc/Butler_Links_Social.php:133
 msgid "Subscribe to me on YouTube"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:130
+#: inc/Butler_Links_Social.php:134
 msgid "Butler.edu"
 msgstr ""
 
@@ -249,11 +249,11 @@ msgstr ""
 msgid "Theme Options"
 msgstr ""
 
-#: inc/Editor/Component.php:66, inc/Nav_Menus/Component.php:71
+#: inc/Editor/Component.php:65, inc/Nav_Menus/Component.php:71
 msgid "Primary"
 msgstr ""
 
-#: inc/Editor/Component.php:71
+#: inc/Editor/Component.php:70
 msgid "Secondary"
 msgstr ""
 
@@ -286,63 +286,71 @@ msgid "White"
 msgstr ""
 
 #: inc/Editor/Component.php:110
-msgid "Dusty daylight"
+msgid "Orange"
 msgstr ""
 
 #: inc/Editor/Component.php:115
+msgid "Pink"
+msgstr ""
+
+#: inc/Editor/Component.php:120
+msgid "Dusty daylight"
+msgstr ""
+
+#: inc/Editor/Component.php:125
 msgid "Dusty sun"
 msgstr ""
 
-#: inc/Editor/Component.php:132, inc/Editor/Component.php:144
-msgid "Small"
+#: inc/Editor/Component.php:142
+msgid "Smallest"
 msgstr ""
 
-#: inc/Editor/Component.php:133
+#: inc/Editor/Component.php:143
 msgid "XXS"
 msgstr ""
 
-#: inc/Editor/Component.php:138
+#: inc/Editor/Component.php:148
 msgid "Smaller"
 msgstr ""
 
-#: inc/Editor/Component.php:139
+#: inc/Editor/Component.php:149
 msgid "XS"
 msgstr ""
 
-#: inc/Editor/Component.php:145
+#: inc/Editor/Component.php:154
+msgid "Small"
+msgstr ""
+
+#: inc/Editor/Component.php:155, inc/Editor/Component.php:161
 msgid "S"
 msgstr ""
 
-#: inc/Editor/Component.php:150
+#: inc/Editor/Component.php:160
 msgid "Regular"
 msgstr ""
 
-#: inc/Editor/Component.php:151
-msgid "R"
-msgstr ""
-
-#: inc/Editor/Component.php:156
+#: inc/Editor/Component.php:166
 msgid "Large"
 msgstr ""
 
-#: inc/Editor/Component.php:157
-msgid "L"
+#: inc/Editor/Component.php:167
+msgid "M"
 msgstr ""
 
-#: inc/Editor/Component.php:162
+#: inc/Editor/Component.php:172
 msgid "Larger"
 msgstr ""
 
-#: inc/Editor/Component.php:163
-msgid "XL"
+#: inc/Editor/Component.php:173
+msgid "L"
 msgstr ""
 
-#: inc/Editor/Component.php:168
+#: inc/Editor/Component.php:178
 msgid "Largest"
 msgstr ""
 
-#: inc/Editor/Component.php:169
-msgid "XXL"
+#: inc/Editor/Component.php:179
+msgid "XL"
 msgstr ""
 
 #: inc/Footers/Component.php:69
@@ -378,7 +386,7 @@ msgid "Sidebar"
 msgstr ""
 
 #. translators: %s: stylesheet handle
-#: inc/Styles/Component.php:238
+#: inc/Styles/Component.php:254
 msgid "Invalid theme stylesheet handle: %s"
 msgstr ""
 
@@ -542,11 +550,11 @@ msgstr ""
 msgid "Display RSS icon"
 msgstr ""
 
-#: template-parts/content/entry-attachment.php:33, template-parts/content/entry.php:31
+#: template-parts/content/entry-attachment.php:33, template-parts/content/entry.php:36
 msgid "Previous:"
 msgstr ""
 
-#: template-parts/content/entry-attachment.php:43, template-parts/content/entry.php:32
+#: template-parts/content/entry-attachment.php:43, template-parts/content/entry.php:37
 msgid "Next:"
 msgstr ""
 
@@ -624,19 +632,6 @@ msgstr ""
 msgid "%s:"
 msgstr ""
 
-#: template-parts/content/error-404.php:16
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
-msgstr ""
-
-#: template-parts/content/error-404.php:27
-msgid "Most Used Categories"
-msgstr ""
-
-#. translators: %1$s: smiley
-#: template-parts/content/error-404.php:45
-msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
-
 #: template-parts/content/error-500.php:14
 msgid "Oops! Something went wrong."
 msgstr ""
@@ -683,6 +678,11 @@ msgstr ""
 
 #: template-parts/content/pagination.php:15
 msgid "Page navigation"
+msgstr ""
+
+#. translators: Theme name.
+#: template-parts/footer/info.php:15
+msgid "Copyright &copy; %1$s by %2$s"
 msgstr ""
 
 #: template-parts/header/navigation.php:16

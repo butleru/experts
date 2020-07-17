@@ -18,11 +18,6 @@ if ( version_compare( $GLOBALS['wp_version'], WP_RIG_MINIMUM_WP_VERSION, '<' ) |
 	return;
 }
 
-// Remove toolbar for subscribers.
-if ( ! current_user_can( 'manage_options' ) ) {
-	add_filter( 'show_admin_bar', '__return_false' );
-}
-
 // Include WordPress shims.
 require get_template_directory() . '/inc/wordpress-shims.php';
 

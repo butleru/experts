@@ -1,18 +1,14 @@
 {
   "theme": {
-    "slug": "marketplace",
-    "name": "Butler Marketplace",
-    "author": "Butler University Information Technology Department",
-    "PHPNamespace": "Butler\\Butler"
+    "slug": "butler-majors",
+    "name": "Butler",
+    "author": "Butler University",
+    "PHPNamespace": "WP_Rig\\WP_Rig"
   },
   "dev": {
     "browserSync": {
       "live": true,
-<<<<<<< HEAD
       "proxyURL": "localhost/butler-new/",
-=======
-      "proxyURL": "localhost/marketplace/",
->>>>>>> upstream/master
       "bypassPort": "8181",
       "https": false
     }

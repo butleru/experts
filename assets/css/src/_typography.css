@@ -17,19 +17,6 @@ textarea {
 }
 /* stylelint-enable */
 
-.main-navigation .menu-item a,
-.utility-navigation .menu-item a {
-	text-transform: uppercase;
-}
-
-.main-navigation .menu-item a {
-	font-size: .9rem;
-}
-
-.utility-navigation .menu-item a {
-	font-size: .7rem;
-}
-
 h1,
 h2,
 h3,
