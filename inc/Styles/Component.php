@@ -301,7 +301,11 @@ class Component implements Component_Interface, Templating_Component_Interface {
 				'global' => true,
 			],
 			'wp-rig-butler-icons' => [
-				'file'   => 'https://butler-cdn.s3.amazonaws.com/custom-icons/css/butler-icons.css',
+				'file'   => 'https://cdn.butler.edu/custom-icons/css/butler-icons.css',
+				'global' => true,
+			],
+			'wp-rig-majors' => [
+				'file'   => 'majors.min.css',
 				'global' => true,
 			],
 			'wp-rig-comments'   => [

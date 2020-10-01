@@ -632,6 +632,19 @@ msgstr ""
 msgid "%s:"
 msgstr ""
 
+#: template-parts/content/error-404.php:16
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: template-parts/content/error-404.php:27
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: template-parts/content/error-404.php:45
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
 #: template-parts/content/error-500.php:14
 msgid "Oops! Something went wrong."
 msgstr ""

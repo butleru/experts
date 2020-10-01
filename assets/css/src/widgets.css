@@ -116,10 +116,12 @@
 	padding-bottom: 0.5em;
 }
 
+/* stylelint-disable */
 .widget_recent_comments a:hover,
 .widget_recent_comments a:focus {
 	padding-left: 0;
 }
+/* stylelint-enable */
 
 /* RSS widget */
 .widget_rss li {

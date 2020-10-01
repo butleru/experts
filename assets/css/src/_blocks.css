@@ -91,6 +91,25 @@
 	margin-left: 1rem;
 }
 
+@media (max-width: 950px) and (min-width: 600px) {
+
+	.wp-block-column {
+		flex-basis: calc(50% - 16px) !important;
+		flex-grow: 0;
+	}
+}
+
+@media screen and (--narrow-content-query) {
+
+	.wp-block-column {
+		flex-basis: 100% !important;
+	}
+
+	.wp-block-column:not(:first-child) {
+		margin-left: initial;
+	}
+}
+
 .wp-block-latest-posts,
 .wp-block-latest-comments {
 	padding-top: 1.5em;

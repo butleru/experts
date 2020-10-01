@@ -1,0 +1,180 @@
+/*--------------------------------------------------------------
+# Majors
+--------------------------------------------------------------*/
+
+.entry-content {
+	position: relative;
+}
+
+.majors-page-header-buttons-container {
+	position: absolute;
+	right: 0;
+	top: -8rem;
+}
+
+.majors-page-header-buttons-container .majors-page-header-buttons {
+	display: flex;
+	flex-direction: column;
+	margin-right: 0;
+}
+
+.majors-page-header-buttons.wp-block-buttons.alignleft .wp-block-button {
+	margin-right: 0;
+}
+
+.majors-page-header-buttons a,
+.majors-page-header-buttons a:active,
+.majors-page-header-buttons a:focus,
+.majors-page-header-buttons a:hover,
+.majors-page-header-buttons a:visited {
+	color: var(--primary-color-blue);
+	font-family: var(--highlight-font-family);
+	text-transform: uppercase;
+	width: 100%;
+	text-align: left;
+}
+
+.majors-page-header-buttons a:hover {
+	text-decoration: underline;
+}
+
+.majors-page-header-buttons a::before {
+	content: "\226B";
+	margin-right: 0.25rem;
+}
+
+.program-intro-section .wp-block-ub-tabbed-content-tab-title-wrap {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.program-intro-section .wp-block-ub-tabbed-content-tabs-title .wp-block-ub-tabbed-content-tab-title-wrap {
+	background: var(--color-theme-secondary);
+}
+
+.program-intro-section .wp-block-ub-tabbed-content-tabs-content {
+	border-top: 5px solid var(--color-theme-primary);
+}
+
+.majors-slate-form-container {
+	padding: 1rem;
+	background: url(/wp-content/uploads/2020/09/M_M-Background-Pattern_01_larger.png);
+}
+
+.majors-slate-form-container h2.slate-form-title {
+	border-bottom: none;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.majors-slate-form-container form {
+	background: #fff;
+	padding: 1rem 38px;
+	border-left: 1px solid var(--color-theme-secondary);
+	border-right: 1px solid var(--color-theme-secondary);
+	border-bottom: 1px solid var(--color-theme-secondary);
+}
+
+.form_birthdate .form_responses {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form_birthdate .form_responses select,
+.form_select > .form_responses select {
+	padding: 3px;
+}
+
+.form_select > .form_responses select,
+.form_text > .form_responses input[type="text"],
+.form_text > .form_responses input[type="email"] {
+	width: 100%;
+}
+
+.form_birthdate .form_responses select {
+	margin-left: 0 !important;
+	margin-right: 0;
+	width: 32%;
+}
+
+.majors-slate-form-container form .action {
+	text-align: center;
+}
+
+.majors-slate-form-container form .action button::before {
+	content: "\226B";
+	margin-right: 0.25rem;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.majors-slate-form-container form .action button {
+	font-family: var(--highlight-font-family);
+	text-transform: uppercase;
+	padding: 1rem 2rem;
+	border-radius: 0;
+	border: none;
+	background: var(--color-theme-blue);
+	color: var(--color-theme-primary);
+	font-size: var(--font-size-regular);
+}
+
+.majors-slate-form-container form .action button::after {
+	content: "\226A";
+	margin-left: 0.25rem;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.majors-slate-form-container form .action button:hover {
+	text-decoration: underline;
+}
+
+.program-intro-section .program-intro-buttons-container {
+	margin-top: 1rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.program-intro-buttons-container .wp-block-buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+/* stylelint-disable */
+.program-intro-buttons-container .wp-block-button:not(:first-child) {
+	margin-top: 0.5rem;
+}
+
+.program-intro-buttons-container .wp-block-button:last-child {
+	margin-bottom: 0;
+}
+/* stylelint-enable */
+
+.majors-top-employers-section {
+	margin-top: 4rem;
+}
+
+.majors-top-employers-logos .blocks-gallery-item:not(:first-child) figure {
+	border-left: 1px solid var(--color-theme-secondary);
+}
+
+.majors-point-of-pride-section.wp-block-group.has-background {
+	margin-top: 4rem;
+}
+
+.majors-point-of-pride-section .point-of-pride-columns {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.point-of-pride-box > div {
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.majors-stories-section {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}

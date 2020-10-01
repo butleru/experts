@@ -39,6 +39,8 @@ namespace WP_Rig\WP_Rig;
 
 		<?php get_template_part( 'template-parts/header/top_bar' ); ?>
 
+		<?php get_template_part( 'template-parts/header/mobile_navigation' ); ?>
+
 		<?php get_template_part( 'template-parts/header/utility_navigation' ); ?>
 
 		<?php get_template_part( 'template-parts/header/custom_header' ); ?>

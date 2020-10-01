@@ -1,12 +1,81 @@
 /*--------------------------------------------------------------
 # Footer Sidebar
 --------------------------------------------------------------*/
+
 .footer-sidebar {
 	display: grid;
-	grid-template-columns: minmax(5rem, 14.5rem) minmax(12.5rem, calc(var(--content-width) / 2)) minmax(5rem, 14.5rem);
+	grid-template-columns: repeat(6, 1fr);
 	grid-gap: 2rem;
 	justify-content: center;
-	align-items: center;
+	max-width: var(--content-width);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer-sidebar .menu {
+	font-size: calc(var(--font-size-small) - 1px);
+	line-height: 1.5;
+	list-style: none;
+	text-align: left;
+}
+
+.footer-sidebar .menu li:not(:first-child) {
+	font-size: var(--font-size-small);
+	font-family: var(--global-font-family);
+	text-transform: capitalize;
+}
+
+.footer-sidebar .menu li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer-sidebar .menu li a:hover {
+	text-decoration: underline;
+}
+
+.footer-sidebar .menu li:first-child a {
+	color: var(--color-theme-pink);
+	text-decoration: none;
+}
+
+.footer-sidebar > section:nth-child(7),
+.footer-sidebar > section:nth-child(9) {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.footer-sidebar > section:nth-child(8) {
+	grid-column-start: 3;
+	grid-column-end: 5;
+	line-height: 1;
+}
+
+.university-footer-info {
+	font-family: var(--global-font-family);
+	text-transform: initial;
+}
+
+.university-footer-name {
+	font-size: var(--font-size-normal);
+}
+
+.university-footer-address,
+.university-footer-phone {
+	font-size: var(--font-size-small);
+	display: inline-block;
+	font-style: normal;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.university-footer-content {
+	font-size: var(--font-size-smaller);
+	line-height: 1.2;
+}
+
+.university-footer-copyright {
+	font-size: var(--font-size-small);
 }
 
 /* stylelint-disable *//* stylelint-enable */

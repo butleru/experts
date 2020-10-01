@@ -57,18 +57,11 @@
 
 .page-featured-image {
 	position: relative;
-	height: 415px;
 	overflow: hidden;
 }
 
 .page-featured-image img {
 	width: 100%;
-	position: absolute;
-	top: -100%;
-	left: 0;
-	right: 0;
-	bottom: -100%;
-	margin: auto;
 }
 
 .page-content,

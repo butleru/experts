@@ -25,6 +25,7 @@
 @import "../_links.css";
 @import "../_media.css";
 @import "../_blocks.css";
+@import "../_decorative-classes.css";
 
 /*--------------------------------------------------------------
 # Adjustments for the editor
@@ -91,4 +92,11 @@ option {
 .wp-block-latest-comments {
 	padding-left: 2.5em;
 	padding-right: 2.5em;
+}
+
+/* Override for custom resuable button block on majors.butler */
+.wp-block-buttons.majors-page-header-buttons.block-editor-block-list__block {
+	float: none;
+	position: relative;
+	text-align: right;
 }

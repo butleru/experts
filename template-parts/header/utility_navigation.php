@@ -36,19 +36,6 @@ if ( ! wp_rig()->is_utility_nav_menu_active() ) {
 	}
 	?>
 
-	<button class="menu-toggle" aria-label="<?php esc_attr_e( 'Open menu', 'wp-rig' ); ?>" aria-controls="utility-menu" aria-expanded="false"
-		<?php
-		if ( wp_rig()->is_amp() ) {
-			?>
-			on="tap:AMP.setState( { siteUtilityNavigationMenu: { expanded: ! siteUtilityNavigationMenu.expanded } } )"
-			[aria-expanded]="siteUtilityNavigationMenu.expanded ? 'true' : 'false'"
-			<?php
-		}
-		?>
-	>
-		<i class="butler-icon bi-bars"></i>
-		<i class="butler-icon butler-icon-2x bi-close"></i>
-	</button>
 	<div class="utility-menu-container">
 		<div class="utility-menu-container-inner">
 			<?php wp_rig()->display_utility_nav_menu( [ 'menu_id' => 'utility-menu' ] ); ?>
