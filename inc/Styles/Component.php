@@ -493,7 +493,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 			$font_families[] = $font_name;
 		}
 
-		$butler_font_cdn_url = 'https://butler-cdn.s3.amazonaws.com/fonts/';
+		$butler_font_cdn_url = 'https://cdn.butler.edu/fonts/';
 		foreach ( $font_families as $font_family ) {
 			$butler_fonts_url_array[] = $butler_font_cdn_url . $font_family . '.css';
 		}
