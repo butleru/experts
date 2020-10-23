@@ -698,18 +698,14 @@ msgstr ""
 msgid "Copyright &copy; %1$s by %2$s"
 msgstr ""
 
-#: template-parts/header/navigation.php:16
-msgid "Main menu"
+#: template-parts/header/mobile_navigation.php:16, template-parts/header/utility_navigation.php:16
+msgid "Utility menu"
 msgstr ""
 
-#: template-parts/header/navigation.php:39, template-parts/header/utility_navigation.php:39
+#: template-parts/header/mobile_navigation.php:39
 msgid "Open menu"
 msgstr ""
 
-#: template-parts/header/navigation.php:49
-msgid "Menu"
-msgstr ""
-
-#: template-parts/header/utility_navigation.php:16
-msgid "Utility menu"
+#: template-parts/header/navigation.php:16
+msgid "Main menu"
 msgstr ""

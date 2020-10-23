@@ -10,7 +10,7 @@ a {
 /* stylelint-enable */
 
 a:visited {
-	color: var(--color-link-visited);
+	color: var(--color-link);
 }
 
 a:hover,
