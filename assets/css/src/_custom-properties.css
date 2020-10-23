@@ -31,7 +31,7 @@
 	--color-custom-sun: #eee9d1;
 
 	--color-link: var(--color-theme-blue);
-	--color-link-visited: var(--color-theme-red);
+	--color-link-visited: var(--color-link);
 	--color-link-active: var(--color-theme-red);
 
 	--color-quote-border: #000;
