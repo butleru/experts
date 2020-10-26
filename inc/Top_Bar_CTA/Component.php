@@ -56,17 +56,35 @@ class Component implements Component_Interface {
 				$wp_customize,
 				'header_top_bar_cta',
 				[
-					'label'     => __( 'Top Bar CTA Image', 'wp-rig' ),
-					'section'   => 'top_header_cta',
+					'label'      => __( 'Top Bar CTA Image', 'wp-rig' ),
+					'section'    => 'top_header_cta',
 					'mime_type'  => 'image',
 				]
 			)
 		);
 
 		$wp_customize->add_setting(
+			'header_top_bar_cta_url',
+			[
+				'default'    => '',
+				'transport'  => 'refresh',
+				'type'       => 'theme_mod',
+				'capability' => 'edit_theme_options',
+			]
+		);
+		$wp_customize->add_control(
+			'header_top_bar_cta_url',
+			[
+				'label'   => __( 'Image Link URL', 'wp-rig' ),
+				'section' => 'top_header_cta',
+				'type'    => 'text',
+			]
+		);
+
+		$wp_customize->add_setting(
 			'top_bar_cta_background_color',
 			[
-				'default'           => '#00a3e0',
+				'default'           => '',
 				'transport'         => 'refresh',
 				'type'              => 'theme_mod',
 				'capability'        => 'edit_theme_options',
