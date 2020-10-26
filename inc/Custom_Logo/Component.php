@@ -32,7 +32,19 @@ class Component implements Component_Interface {
 	 * Adds the action and filter hooks to integrate with WordPress.
 	 */
 	public function initialize() {
+		add_action( 'after_setup_theme', [ $this, 'add_logo_image_size' ] );
 		add_action( 'after_setup_theme', [ $this, 'action_add_custom_logo_support' ] );
+	}
+
+	/**
+	 * Register logo size.
+	 */
+	public function add_logo_image_size() {
+		add_image_size(
+			'logo-image',
+			400,
+			35
+		);
 	}
 
 	/**
@@ -44,8 +56,8 @@ class Component implements Component_Interface {
 			apply_filters(
 				'wp_rig_custom_logo_args',
 				[
-					'height'      => 35,
-					'width'       => 400,
+					'height'      => 400,
+					'width'       => 35,
 					'flex-width'  => true,
 					'flex-height' => true,
 				]
