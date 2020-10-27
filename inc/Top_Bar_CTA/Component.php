@@ -12,6 +12,7 @@ use function WP_Rig\WP_Rig\wp_rig;
 use WP_Customize_Manager;
 use WP_Customize_Color_Control;
 use WP_Customize_Image_Control;
+use WP_Rig\WP_Rig\Butler_Toggle_Switch_Custom_Control;
 use WP_Rig\WP_Rig\Butler_Customize_Alpha_Color_Control;
 use function add_action;
 use function is_admin;
@@ -41,6 +42,37 @@ class Component implements Component_Interface {
 	 * @param WP_Customize_Manager $wp_customize Customizer manager instance.
 	 */
 	public function action_customize_register_header_top_bar_cta( WP_Customize_Manager $wp_customize ) {
+		// Add our Checkbox switch setting and control for opening URLs in a new tab.
+		$wp_customize->add_setting(
+			'cta_url_newtab',
+			[
+				'default' => $this->defaults['cta_url_newtab'],
+				'transport' => 'postMessage',
+				'sanitize_callback' => $this->butler_switch_sanitization,
+			]
+		);
+		$wp_customize->add_control(
+			new Butler_Toggle_Switch_Custom_Control(
+				$wp_customize,
+				'cta_url_newtab',
+				[
+					'label' => __( 'Open in new browser tab', 'wp-rig' ),
+					'section' => 'top_header_cta',
+				]
+			)
+		);
+		$wp_customize->selective_refresh->add_partial(
+			'cta_url_newtab',
+			[
+				'selector' => '.cta',
+				'container_inclusive' => false,
+				'render_callback' => function() {
+					echo $this->butler_get_social_media(); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */
+				},
+				'fallback_refresh' => true,
+			]
+		);
+
 		$wp_customize->add_setting(
 			'header_top_bar_cta',
 			[

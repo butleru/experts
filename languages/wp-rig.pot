@@ -394,11 +394,15 @@ msgstr ""
 msgid "Top Bar CTA Image"
 msgstr ""
 
-#: inc/Top_Bar_CTA/Component.php:81
+#: inc/Top_Bar_CTA/Component.php:78
+msgid "Image Link URL"
+msgstr ""
+
+#: inc/Top_Bar_CTA/Component.php:99
 msgid "CTA Background Color Picker"
 msgstr ""
 
-#: inc/Top_Bar_CTA/Component.php:82
+#: inc/Top_Bar_CTA/Component.php:100
 msgid "Set the background color of the CTA"
 msgstr ""
 
