@@ -56,6 +56,10 @@
 	border-top: 5px solid var(--color-theme-primary);
 }
 
+.more-info-container {
+	margin-top: 1rem;
+}
+
 .majors-slate-form-container {
 	padding: 1rem;
 	background: url(/wp-content/uploads/2020/09/M_M-Background-Pattern_01_larger.png);
