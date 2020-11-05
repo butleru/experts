@@ -587,7 +587,8 @@ select {
 	display: block;
 	margin: 0 auto;
 	padding: 0 1em;
-	font-family: var(--global-font-family);
+	font-family: var(--highlight-font-family);
+	text-transform: uppercase;
 	font-stretch: condensed;
 	background: var(--color-theme-primary);
 }
@@ -604,7 +605,7 @@ select {
 	padding: .5em 0;
 	text-decoration: none;
 	color: #fff;
-	font-size: var(--font-size-small);
+	font-size: var(--font-size-smaller);
 }
 /* stylelint-enable */
 
