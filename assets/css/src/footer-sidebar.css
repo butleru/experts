@@ -35,8 +35,13 @@
 }
 
 .footer-sidebar .menu li:first-child a {
-	color: var(--color-theme-pink);
+	color: var(--color-theme-white);
+	font-weight: 700;
 	text-decoration: none;
+}
+
+.footer-sidebar .menu li:first-child a:hover {
+	text-decoration: underline;
 }
 
 .footer-sidebar > section:nth-child(7),

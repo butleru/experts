@@ -51,135 +51,135 @@ msgstr ""
 msgid "WP Rig requires at least PHP version %1$s. You are running version %2$s. Please update and try again."
 msgstr ""
 
-#: inc/Butler_Links_Social.php:102
+#: inc/Butler_Links_Social.php:98
 msgid "Follow me on Behance"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:103
+#: inc/Butler_Links_Social.php:99
 msgid "Fork me on Bitbucket"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:104
+#: inc/Butler_Links_Social.php:100
 msgid "Follow me on CodePen"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:105
+#: inc/Butler_Links_Social.php:101
 msgid "Watch me on DeviantArt"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:106
+#: inc/Butler_Links_Social.php:102
 msgid "Join me on Discord"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:107
+#: inc/Butler_Links_Social.php:103
 msgid "Follow me on Dribbble"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:108
+#: inc/Butler_Links_Social.php:104
 msgid "favorite me on Etsy"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:109
+#: inc/Butler_Links_Social.php:105
 msgid "Like us on Facebook"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:110
+#: inc/Butler_Links_Social.php:106
 msgid "Connect with me on Flickr"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:111
+#: inc/Butler_Links_Social.php:107
 msgid "Follow me on Foursquare"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:112
+#: inc/Butler_Links_Social.php:108
 msgid "Fork me on GitHub"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:113
+#: inc/Butler_Links_Social.php:109
 msgid "Follow me on Instagram"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:114
+#: inc/Butler_Links_Social.php:110
 msgid "Back me on Kickstarter"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:115
+#: inc/Butler_Links_Social.php:111
 msgid "Follow me on Last.fm"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:116
+#: inc/Butler_Links_Social.php:112
 msgid "Connect with me on LinkedIn"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:117
+#: inc/Butler_Links_Social.php:113
 msgid "Follow me on Medium"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:118
+#: inc/Butler_Links_Social.php:114
 msgid "Support me on Patreon"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:119
+#: inc/Butler_Links_Social.php:115
 msgid "Follow me on Pinterest"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:120
+#: inc/Butler_Links_Social.php:116
 msgid "Connect with me on Google+"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:121
+#: inc/Butler_Links_Social.php:117
 msgid "Join me on Reddit"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:122
+#: inc/Butler_Links_Social.php:118
 msgid "Join me on Slack"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:123
+#: inc/Butler_Links_Social.php:119
 msgid "Follow me on SlideShare"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:124
+#: inc/Butler_Links_Social.php:120
 msgid "Add me on Snapchat"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:125
+#: inc/Butler_Links_Social.php:121
 msgid "Follow me on SoundCloud"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:126
+#: inc/Butler_Links_Social.php:122
 msgid "Follow me on Spotify"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:127
+#: inc/Butler_Links_Social.php:123
 msgid "Join me on Stack Overflow"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:128
+#: inc/Butler_Links_Social.php:124
 msgid "Follow me on Tumblr"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:129
+#: inc/Butler_Links_Social.php:125
 msgid "Follow me on Twitch"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:130
+#: inc/Butler_Links_Social.php:126
 msgid "Follow me on Twitter"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:131
+#: inc/Butler_Links_Social.php:127
 msgid "Follow me on Vimeo"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:132
+#: inc/Butler_Links_Social.php:128
 msgid "Follow me on weibo"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:133
+#: inc/Butler_Links_Social.php:129
 msgid "Subscribe to me on YouTube"
 msgstr ""
 
-#: inc/Butler_Links_Social.php:134
+#: inc/Butler_Links_Social.php:130
 msgid "Butler.edu"
 msgstr ""
 
@@ -390,24 +390,24 @@ msgstr ""
 msgid "Invalid theme stylesheet handle: %s"
 msgstr ""
 
-#: inc/Top_Bar_CTA/Component.php:59
+#: inc/Top_Bar_CTA/Component.php:59, inc/Top_Bar_Icons/Component.php:73
+msgid "Open in new browser tab"
+msgstr ""
+
+#: inc/Top_Bar_CTA/Component.php:91
 msgid "Top Bar CTA Image"
 msgstr ""
 
-#: inc/Top_Bar_CTA/Component.php:78
+#: inc/Top_Bar_CTA/Component.php:110
 msgid "Image Link URL"
 msgstr ""
 
-#: inc/Top_Bar_CTA/Component.php:99
+#: inc/Top_Bar_CTA/Component.php:131
 msgid "CTA Background Color Picker"
 msgstr ""
 
-#: inc/Top_Bar_CTA/Component.php:100
+#: inc/Top_Bar_CTA/Component.php:132
 msgid "Set the background color of the CTA"
-msgstr ""
-
-#: inc/Top_Bar_Icons/Component.php:73
-msgid "Open in new browser tab"
 msgstr ""
 
 #: inc/Top_Bar_Icons/Component.php:104
