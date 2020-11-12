@@ -237,6 +237,11 @@ select {
 	color: var(--color-theme-primary);
 }
 
+.social-icons .social-icon .butler-icon:hover,
+.social-icons .social-icon a:focus .butler-icon {
+	color: var(--color-theme-blue);
+}
+
 @media screen and (--tablet-icon-query) {
 
 	.social-icon {
