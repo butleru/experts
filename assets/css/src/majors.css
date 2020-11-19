@@ -23,18 +23,19 @@
 }
 
 .majors-page-header-buttons a,
-.majors-page-header-buttons a:active,
-.majors-page-header-buttons a:focus,
-.majors-page-header-buttons a:hover,
 .majors-page-header-buttons a:visited {
-	color: var(--primary-color-blue);
+	color: var(--color-theme-primary);
 	font-family: var(--highlight-font-family);
 	text-transform: uppercase;
 	width: 100%;
 	text-align: left;
 }
 
+.majors-page-header-buttons a:active,
+.majors-page-header-buttons a:focus,
 .majors-page-header-buttons a:hover {
+	color: var(--color-theme-blue);
+	background: var(--color-theme-primary);
 	text-decoration: underline;
 }
 
