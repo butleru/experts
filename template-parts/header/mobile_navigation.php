@@ -7,7 +7,7 @@
 
 namespace WP_Rig\WP_Rig;
 
-if ( ! wp_rig()->is_utility_nav_menu_active() || ! wp_rig()->is_primary_nav_menu_active() ) {
+if ( ! wp_rig()->is_utility_nav_menu_active() && ! wp_rig()->is_primary_nav_menu_active() ) {
 	return;
 }
 
