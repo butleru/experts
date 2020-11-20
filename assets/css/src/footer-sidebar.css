@@ -4,7 +4,7 @@
 
 .footer-sidebar {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(min(213px, 100%), 1fr));
 	grid-gap: 2rem;
 	justify-content: center;
 	max-width: var(--content-width);
