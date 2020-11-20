@@ -17,6 +17,7 @@ a:hover,
 a:focus,
 a:active {
 	color: var(--color-link-active);
+	filter: brightness(85%);
 }
 
 a:focus {
