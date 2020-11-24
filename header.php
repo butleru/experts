@@ -49,7 +49,7 @@ namespace WP_Rig\WP_Rig;
 
 		<?php get_template_part( 'template-parts/header/navigation' ); ?>
 
-		<?php echo ( ! has_post_thumbnail( $post->ID ) && ! is_primary_nav_menu_active() ) ? '<hr class="header-rule">' : ''; ?>
+		<?php echo ( ! has_post_thumbnail( $post->ID ) || ! is_primary_nav_menu_active() ) ? '<hr class="header-rule">' : ''; ?>
 
 		<?php get_template_part( 'template-parts/header/page_featured_image' ); ?>
 	</header><!-- #masthead -->
