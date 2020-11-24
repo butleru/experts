@@ -395,6 +395,10 @@ select {
 		display: block;
 		list-style: none;
 	}
+
+	.sub-menu {
+		display: none;
+	}
 }
 
 @media screen and (--wide-menu-query) {
