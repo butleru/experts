@@ -23,7 +23,9 @@ $hide_title = get_post_meta( $post->ID, '_hide_page_title__meta_key' );
 		get_template_part( 'template-parts/content/entry_content', get_post_type() );
 	}
 
-	get_template_part( 'template-parts/content/entry_footer', get_post_type() );
+	if ( 'experts' !== get_post_type() ) {
+		get_template_part( 'template-parts/content/entry_footer', get_post_type() );
+	}
 	?>
 </article><!-- #post-<?php the_ID(); ?> -->
 

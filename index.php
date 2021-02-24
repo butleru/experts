@@ -20,7 +20,8 @@ wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
 <div id="content-container" class="main-sidebar-container">
-	<main id="primary" class="site-main">
+	<?php ray( is_archive() ); ?>
+	<main id="primary" class="site-main"><h1>hello</h1>
 		<?php
 		if ( have_posts() ) {
 
@@ -43,6 +44,6 @@ wp_rig()->print_styles( 'wp-rig-content' );
 <?php
 get_sidebar();
 ?>
-</div>
+</div><!-- #content-container -->
 <?php
 get_footer();

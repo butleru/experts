@@ -66,13 +66,15 @@
 
 .page-content,
 .entry-content,
-.entry-summary {
+.entry-summary,
+.archive-content {
 	margin: 1.5em 0 0;
 }
 
 @media (--narrow-content-query) {
 
-	.entry-content {
+	.entry-content,
+	.archive-content {
 		margin: 0;
 	}
 
@@ -80,7 +82,8 @@
 
 .page-content > *,
 .entry-content > *,
-.entry-summary > * {
+.entry-summary > *,
+.archive-content > * {
 	margin-right: auto;
 	margin-left: auto;
 	padding-right: 1.5rem;
@@ -110,6 +113,7 @@
 	.page-content > *,
 	.entry-content > *,
 	.entry-summary > *,
+	.archive-content > *,
 	.page-header,
 	.entry-header,
 	.entry-footer,
@@ -124,13 +128,17 @@
 }
 
 .entry-content ul,
-.entry-content ol {
+.entry-content ol,
+.archive-content ul,
+.archive-content ol, {
 	padding-right: 2.5em;
 	padding-left: 2.5em;
 }
 
 .entry-content ul ul,
-.entry-content ol ol {
+.entry-content ol ol,
+.archive-content ul ul,
+.archive-content ol ol {
 	margin-right: 0;
 	margin-left: 0;
 	padding-right: 1.5em;
@@ -138,7 +146,8 @@
 }
 
 /* Align .more-link with the content. */
-.entry-content > .more-link {
+.entry-content > .more-link,
+.archive-content > .more-link {
 	display: block;
 }
 

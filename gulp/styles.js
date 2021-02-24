@@ -13,6 +13,7 @@ import stylelint from 'stylelint';
 import reporter from 'postcss-reporter';
 import calc from 'postcss-calc';
 import { pipeline } from 'mississippi';
+import purgecss from '@fullhuman/postcss-purgecss';
 
 /**
  * Internal dependencies
@@ -51,6 +52,10 @@ export function stylesAfterReplacementStream() {
 
 	const postcssPlugins = [
 		stylelint(),
+		purgecss( {
+			content: ['./**/*.php'],
+			css: `${ process.cwd() }/assets/**/*.css`,
+		} ),
 		postcssPresetEnv( {
 			importFrom: (
 				configValueDefined( 'config.dev.styles.importFrom' ) ?

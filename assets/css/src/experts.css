@@ -1,0 +1,83 @@
+/*--------------------------------------------------------------
+# Experts
+--------------------------------------------------------------*/
+
+.experts .entry-title {
+
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+	max-width: var(--content-width);
+}
+
+@media screen and (--narrow-content-query) {
+
+	.experts .entry-title {
+		padding-right: 1.5rem;
+		padding-left: 1.5rem;
+	}
+}
+
+@media screen and (--sidebar-query) {
+
+	.experts-content {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap: 2rem;
+		justify-content: center;
+		width: var(--content-width);
+	}
+}
+
+.experts-header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.experts-header h1 {
+	flex-basis: 100%;
+	margin-bottom: 0.75rem;
+}
+
+.experts-details-container {
+	margin-right: 1.5rem;
+}
+
+.experts-details-container h2 {
+	margin-top: 0;
+}
+
+.expert-affiliations-titles-container {
+	font-size: 1.25rem;
+}
+
+.expert-content-main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.areas-of-focus-container {
+	width: 50%;
+}
+
+.expert-content-sidebar-inner.butler-blue-branded-top h2 {
+	margin-bottom: 0;
+}
+
+.expert-sidebar-list {
+	margin: 0;
+}
+
+.expert-phone-container,
+.expert-email-container,
+.expert-website-container {
+	display: flex;
+	align-items: center;
+}
+
+.expert-content-sidebar {
+	margin-top: 1.5rem;
+}

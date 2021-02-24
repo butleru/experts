@@ -5,4 +5,6 @@
  * @package wp_rig
  */
 
-get_template_part( 'template-parts/header/header_thumbnail', get_post_type() );
+if ( 'experts' !== get_post_type() ) {
+	get_template_part( 'template-parts/header/header_thumbnail', get_post_type() );
+}

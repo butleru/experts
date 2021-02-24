@@ -304,8 +304,8 @@ class Component implements Component_Interface, Templating_Component_Interface {
 				'file'   => 'https://cdn.butler.edu/custom-icons/css/butler-icons.css',
 				'global' => true,
 			],
-			'wp-rig-majors' => [
-				'file'   => 'majors.min.css',
+			'wp-rig-experts' => [
+				'file'   => 'experts.min.css',
 				'global' => true,
 			],
 			'wp-rig-comments'   => [

@@ -1,14 +1,14 @@
 {
   "theme": {
-    "slug": "butler-majors",
-    "name": "Butler",
+    "slug": "newsroom",
+    "name": "Butler Newsroom",
     "author": "Butler University",
     "PHPNamespace": "WP_Rig\\WP_Rig"
   },
   "dev": {
     "browserSync": {
       "live": true,
-      "proxyURL": "localhost/butler-new/",
+      "proxyURL": "localhost/experts/",
       "bypassPort": "8181",
       "https": false
     }
